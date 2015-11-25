@@ -1,0 +1,968 @@
+/**
+ * $Id: layout.css,v 1.2 2004/03/05 18:47:06 nelson Exp $
+ * 
+ * Esta CSS proporciona la diagramaci&oacute;n general de las p&aacute;ginas principales 
+ * del proyecto.
+ * 
+ * @media		screen
+ * @ua			IE5+, Mozilla 1.3+, Konqueror X, Opera X
+ * @level		2
+ * @name			layout.css
+ * @version		$Revision: 1.2 $
+ * @since		$Date: 2004/03/05 18:47:06 $
+ * @author		Nelson Rodr&iacute;guez-Pe&ntilde;a <nelson@webstudio.cl>
+ *
+ */
+
+
+body {
+	margin: 40px 60px 10px 60px;
+
+	/* s&oacute;lo para efectos de layout durante el montaje
+	background-image: url(ruler.gif);
+	background-repeat: no-repeat; */
+	
+}
+
+#pageHeader {
+	border-bottom: 2px solid #273D70;
+	margin-bottom: 15px;
+}
+
+/**
+ * Esto es s&oacute;lo para asegurar que el anchor de inicio de la p&aacute;gina no genere 
+ * problemas de despliegue.
+ */
+a#top {
+	display: inline;
+}
+
+#pageHeader {
+	margin: 0px;
+}
+
+#pageHeader #corpLogo {
+	position: absolute;
+	left: 60px;
+	margin: 0px;
+	padding: 0px;
+	width: 160px;
+	border-right: 1px solid #666666;
+}
+
+/*
+ * Las siguientes declaraciones seleccionan el logo apropiado para pantalla:
+ *
+ */
+#pageHeader #corpLogo #printLogo {
+	display: none;
+}
+#pageHeader #corpLogo #screenLogo {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+#pageHeader #corpLogo #screenLogo img {
+	display: inline;
+	vertical-align: text-bottom;
+}
+
+#pageHeader #uiMainMenu {
+	height: 27px;
+	padding: 0px;
+	margin: 0px 0px 0px 160px;
+	background-image: url(../images/hd.bg.menubar.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	overflow: hidden;
+	font-size: 85%;
+}
+/* IE necesita este elemento como inline; los browsers est&aacute;ndar usan block */
+html>body #pageHeader #uiMainMenu {
+	font-size: 90%;
+	display: block;
+}
+#pageHeader #uiMainMenu ul {
+	display: inline;
+	border: none;
+	margin: 0px;
+	height: 27px;
+}
+#pageHeader #uiMainMenu ul li,
+#pageHeader #uiMainMenu ul li.unselected {
+	display: inline;
+	float: left;
+	margin: 0px;
+	padding: 0 15px 0 15px;
+	height: 27px;
+	background-image: url(../images/hd.bg.menuitem.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	border-right: 1px solid #E7B2B2;
+}
+/**
+ * A continuaci&oacute;n se establece una serie de hacks para aislar 
+ * particularmente a IE5+Win y IE6Win. Se utiliza una combinaci&oacute;n 
+ * de hacks, Star HTML hack y una adaptaci&oacute;n de t&eacute;cnicas en base 
+ * a Inline High Pass Filter hack. El prop&oacute;sito es ajustar el 
+ * padding de acuerdo a las necesidades de cada browser. Los 
+ * browsers que respetan los est&aacute;ndares utilizar&aacute;n el selector 
+ * anterior.
+ */
+* html #pageHeader #uiMainMenu ul li {
+	text-align: center;
+	padding: 0px 0.5em;
+	content: "\"}\"";
+	padding: 0px 0px 0px 0.6em;
+}
+
+#pageHeader #uiMainMenu a,
+#pageHeader #uiMainMenu a:link,
+#pageHeader #uiMainMenu a:visited,
+#pageHeader #uiMainMenu a:hover,
+#pageHeader #uiMainMenu a:active {
+	color: #333333;
+	text-decoration: none;
+	padding: 0px 10px 0px 10px;
+}
+#pageHeader #uiMainMenu ul li:hover,
+#pageHeader #uiMainMenu ul li.current {
+	background-image: url(../images/hd.bg.menuitem.over.gif);
+	text-decoration: none;
+}
+
+#pageHeader #gwConcept {
+	margin: 0px;
+	padding: 0px 0px 0px 160px;
+	border-top: 1px solid #640000;
+	overflow: hidden;
+	height: 53px;
+	background: url(../images/hd.bgtile.jpg) repeat-x top;
+}
+/* Child selector hack */
+html>body #pageHeader #gwConcept #gwPicture img {
+	margin-left: 0px;
+}
+
+
+/*
+ * Men&uacute; de herramientas complementarias:
+ *
+ */
+#pageHeader #uiToolsMenu {	
+	display: block;
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+	top: 3px;
+	right: 60px;
+	font-size: 80%;
+	vertical-align: top;
+	background-color: #FFFFFF;
+}
+#pageHeader #uiToolsMenu ul {
+	margin: 0px;
+	padding: 0px;
+}
+#pageHeader #uiToolsMenu li {
+	display: block;
+	float: left;
+	margin: 0px 0.5em;
+	padding: 0px;
+	text-align: center;
+}
+#pageHeader #uiToolsMenu a.actionLink,
+#pageHeader #uiToolsMenu a.actionLink:link,
+#pageHeader #uiToolsMenu a.actionLink:visited {
+	text-decoration: none;
+	color: #666666;
+}
+#pageHeader #uiToolsMenu a.actionLink:hover,
+#pageHeader #uiToolsMenu a.actionLink:active {
+	text-decoration: underline;
+	color: #666666;
+}
+#pageHeader #uiToolsMenu a.actionLink img {
+	vertical-align: top;
+	margin: 0px auto;
+	border: none;
+}
+#pageHeader #uiToolsMenu a.actionLink span.actionLabel {
+	display: block;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/**
+ * Contenedor general; reglas coomunes.
+ */
+#container {
+	border-top: 2px solid #CCCCCC;
+	padding-top: 15px;
+	margin: 0px;
+}
+
+/**
+ * Este elemento contiene la introducci&oacute;n de cada p&aacute;gina.
+ */
+#container #introduction {
+	padding: 0px;
+}
+#container #introduction p {
+	line-height: 1.5em;
+}
+#container #introduction #introContent {
+	margin-left: 170px;
+}
+#container #introduction h1 {
+	padding-top: 0px;
+	margin-top: 0.3em;
+}
+
+#container.homePage {
+	
+}
+#container #introduction img.sectionPict {
+	position: absolute;
+	left: 60px;
+	display: block;
+	margin: 0px 10px 10px 0px;
+}
+
+
+
+#container #access {
+	border-top: 2px dotted #CCCCCC;
+	/* 
+	 En este punto IE6 no interpreta correctamente el padding,
+	 lo reconoce como la mitad que Mozilla...
+	 se entregar&aacute; instrucci&oacute;n alternativa v&iacute;a Child Selector.
+	 */
+	padding-top: 0.4em;
+	text-align: center;
+	margin-top: 1em;
+}
+html>body #container #access {
+	padding-top: 0.8em;
+}
+
+#container #access div.accessBox {
+	text-align: left;
+	width: 30%;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	/*border: 1px solid lime;*/
+	float: left;
+}
+#container #access h2 {
+	margin: 0px 0px 1em 0px;
+	padding-top: 0.8em;
+	line-height: 1.2em;
+}
+#container #access h2 img {
+	display: block;
+	float: left;
+	margin-top: -0.4em;
+	/*vertical-align: middle;*/
+}
+#container #access p {
+	/* Equivalente al ancho del &iacute;cono en t&iacute;tulo de secci&oacute;n */
+	margin-left: 45px;
+	margin-top: 0px;
+	font-size: 90%;
+}
+
+
+#container #access #chapters.accessBox {
+	border-right: 1px dotted #CCCCCC;
+}
+#container #access #roles.accessBox {
+	border-left: 1px dotted #CCCCCC;
+}
+
+#container div.accessBox ul {
+	font-size: 90%;
+	margin-left: 45px;
+	padding: 0px;
+	list-style: none;
+}
+#container div.accessBox li {
+	clear: both;
+	line-height: 1.2em;
+	margin: 0.1em 0px;
+}
+#container div.accessBox li img {
+	float: none;
+	vertical-align: middle;
+	border: none;
+	margin-right: 6px;
+}
+#container #chapters.accessBox li img {
+	float: left;
+}
+#container #chapters.accessBox li {
+	margin: 1.2em 0px;
+}
+
+
+
+/**
+ * Portadillas
+ */
+#container ul.iconizedList {
+	margin-left: 45px;
+	padding: 0px;
+	list-style: none;
+}
+#container ul.iconizedList li {
+	line-height: 1.2em;
+	margin: 0.1em 0px;
+}
+#container ul.iconizedList li img {
+	vertical-align: middle;
+	border: none;
+	margin-right: 2px;
+}
+
+
+
+/**
+ * Men&uacute; de rastros
+ */
+#container ul.breadCrumbs {
+	display: block;
+	color: #666666;
+	border-bottom: 1px dotted #CCCCCC;
+	border-left: 170px solid #FFFFFF;
+	margin: 0px;
+	padding: 0px 0px 0.2em 0px;
+	font-size: 0.85em;
+}
+#container ul.breadCrumbs li {
+	display: inline;
+	margin: 0px;
+	padding: 0px 3px 0px 10px;
+	background: #FFFFFF url(../images/icn_bcseparator.gif) no-repeat center left;
+}
+#container ul.breadCrumbs li.label,
+#container ul.breadCrumbs li.first {
+	background: none;
+	padding-left: 0px;
+}
+#container ul.breadCrumbs li.label {
+	font-weight: bold;
+}
+#container ul.breadCrumbs a {
+	text-decoration: underline;
+}
+#container ul.breadCrumbs a:link,
+#container ul.breadCrumbs a:visited {
+	color: #85889E;
+}
+#container ul.breadCrumbs a:hover,
+#container ul.breadCrumbs a:active {
+	color: #677096;
+}
+
+
+/**
+ * Men&uacute; interior de secciones
+ */
+#container #uiSectionMenu {
+	position: absolute;
+	left: 60px;
+	width: 150px;
+	display: block;
+	margin: 0px 10px 10px 0px;
+	font-size: 0.85em;
+}
+
+/**
+ * Men&uacute; especial para Gu&iacute;a
+ */
+#container #uiSectionMenu ul.menuGuia {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+#container #uiSectionMenu ul.menuGuia a {
+	color: #555555;
+}
+#container #uiSectionMenu ul.menuGuia li {
+	display: block;
+	margin: 2px 0px;
+	padding: 0.2em 10px 0.2em 30px;
+	border: 1px solid #999999;
+	background: #F8F8F8;
+}
+#container #uiSectionMenu ul.menuGuia li.mgItem0 {
+	background: #F8F8F8 url(../images/icn_guia00.gif) no-repeat left top;
+	font-weight: bold;
+	text-decoration: underline;
+}
+#container #uiSectionMenu ul.menuGuia li.mgItem1 {
+	background: #F8F8F8 url(../images/icn_guia01.gif) no-repeat left top;
+}
+#container #uiSectionMenu ul.menuGuia li.mgItem2 {
+	background: #F8F8F8 url(../images/icn_guia02.gif) no-repeat left top;
+}
+#container #uiSectionMenu ul.menuGuia li.mgItem3 {
+	background: #F8F8F8 url(../images/icn_guia03.gif) no-repeat left top;
+}
+#container #uiSectionMenu ul.menuGuia li.mgItem4 {
+	background: #F8F8F8 url(../images/icn_guia04.gif) no-repeat left top;
+}
+#container #uiSectionMenu ul.menuGuia li.mgItem5 {
+	background: #F8F8F8 url(../images/icn_guia05.gif) no-repeat left top;
+}
+#container #uiSectionMenu ul.menuGuia li.mgItem6 {
+	background: #F8F8F8 url(../images/icn_guiafiles.gif) no-repeat left top;
+}
+#container #uiSectionMenu ul.menuGuia li.mgItem7 {
+	background: #F8F8F8 url(../images/icn_guiachck.gif) no-repeat left top;
+}
+
+
+#container #content {
+	margin-left: 170px;
+	/*border: 1px dotted #669999;*/
+}
+
+
+
+/**
+ * Cuadro de resumen para cap&iacute;tulos y secciones:
+ */
+#container #content div.summary {
+	background: #F0F0F0;
+	color: #536168;
+	border-top: 2px dotted #666666;
+	border-bottom: 2px dotted #666666;
+	font-size: 1.1em;
+	margin-top: 1em;
+	padding: 1em 2em;
+}
+#container #content div.summary h2 {
+	margin: 0px;
+	font-size: 1.1em;
+	border: none;
+	
+}
+#container #content div.summary p.first:first-letter {
+	font-weight: bold;
+	font-size: 1.4em;
+	line-height: 1em;
+}
+#container #content div.summary strong {
+	font-weight: bold;
+	color: inherit;
+}
+/**
+ * Aparentemente IE no es capaz de asumir correctamente 
+ * la herencia en el selector anterior...
+ */
+* html #container #content div.summary strong {
+	color: #536168;
+}
+
+
+
+/**
+ * A continuaci&oacute;n se definen elementos en el contecto de
+ * #container.intStandard, p&aacute;gina de contenido interior
+ * com&uacute;n.
+ */
+
+#container.intStandard #content {
+	
+}
+/**
+ * T&iacute;tulos para cap&iacute;tulos de la Gu&iacute;a
+ */
+#container.intStandard #content h1.chapter {
+	border: 1px solid #999999;
+	height: 33px;
+	padding: 0px 0px 0px 30px;
+	vertical-align: middle;
+	line-height: 1.8em;
+}
+#container.intStandard #content h1.chapter span.text {
+	vertical-align: middle;
+}
+#container.intStandard #content h1.chapter.guide01 {
+	background: #FFFFFF url(../images/icn_guia01.gif) no-repeat left top;
+}
+#container.intStandard #content h1.chapter.guide02 {
+	background: #FFFFFF url(../images/icn_guia02.gif) no-repeat left top;
+}
+#container.intStandard #content h1.chapter.guide03 {
+	background: #FFFFFF url(../images/icn_guia03.gif) no-repeat left top;
+}
+#container.intStandard #content h1.chapter.guide04 {
+	background: #FFFFFF url(../images/icn_guia04.gif) no-repeat left top;
+}
+#container.intStandard #content h1.chapter.guide05 {
+	background: #FFFFFF url(../images/icn_guia05.gif) no-repeat left top;
+}
+
+#container.intStandard #content div.stressed {
+	border: 3px solid #808AAC;
+	padding: 1em 2em;
+	background: #E6E8EE;
+	font-size: 1.1em;
+	margin: 2em 0px;
+}
+/**
+ * T&iacute;tulos menores
+ */
+#container.intStandard #content h2 {
+	padding-bottom: 0.3em;
+	border-bottom: 2px dotted #CCCCCC;
+	margin: 1.6em 0px 0.8em 0px;
+}
+#container.intStandard #content h3 {
+	padding-bottom: 0.2em;
+	border-bottom: 2px dotted #CCCCCC;
+	margin: 1.6em 0px 0.8em 0px;
+}
+#container.intStandard #content h4 {
+	padding-bottom: 0.2em;
+	border-bottom: 2px dotted #DDDDDD;
+	margin: 1.6em 0px 0.8em 0px;
+}
+
+
+
+#container.intStandard #content div.supplement {
+	font-size: 90%;
+	float: right;
+	width: 30%;
+	border: 2px solid #CCCCCC;
+	padding: 0.6em 1em;
+	margin: 0.6em 0px 0.6em 0.6em;
+	background: #FFFFFF;
+}
+#container #content div.supplement ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#container.intStandard #content div.supplement h2 {
+	margin: 0px 0px 0.2em 0px;
+	border: none;
+	font-size: 1.1em;
+}
+
+
+
+#container #content div.uiPageContents {
+	font-size: 85%;
+	float: right;
+	width: 35%;
+	border: 1px solid #333333;
+	padding: 0px;
+	margin: 0.6em 10px 0.6em 1em;
+	background: #FFFFFF;
+}
+#container #content div.uiPageContents div {
+	padding: 0px 0.6em 0.6em 0.6em;
+}
+#container #content div.uiPageContents ul {
+	margin: 0px 0px 0px 1em;
+	padding: 0.3em 0.8em;
+	list-style: url(../images/icn_navlistbullet.gif) outside;
+}
+/**
+ * Star-HTML hack para corregir posici&oacute;n de lista s&oacute;lo en IE:
+ */
+* html #container #content div.uiPageContents ul {
+	margin: 0px 0px 0px 0.8em;
+	padding: 0.8em 0.5em;
+}
+/**
+ * Bueno, ahora se llama FIR, pero esta t&eacute;cnica la use en www.bcentral.cl
+ * a principios del 2003...
+ */
+#container #content div.uiPageContents h2 {
+	padding: 0px;
+	margin: 0px;
+	background: #C9D0D3 url(../images/bg_uipagecontents.gif) no-repeat left;
+	height: 20px;
+	border: none;
+}
+#container #content div.uiPageContents h2 span.text {
+	display: none;
+}
+
+
+#container.intStandard #content div.imgSet {
+	display: block;
+	margin: 0.6em 1.5em 0.6em 0px;
+	font-size: 90%;
+	color: #666666;
+	float: none;
+	width: 90%;
+	text-align: center;
+	vertical-align: top;
+	border: 1px dotted #CCCCCC;
+}
+#container.intStandard #content div.imgSet img {
+	display: block;
+	float: none;
+	padding: 0.6em 1em;
+	margin: 1em auto;
+	border: 1px solid #666666;
+}
+#container.intStandard #content div.imgSet p.caption {
+	background: #F0F0F0;
+	padding: 0.6em 1em;
+	margin: 0px 1em;
+}
+
+
+
+
+#container #content div.chapterNav {
+	margin-top: 2em;
+	border-top: 2px solid #C9D0D3;
+	text-align: right;
+	padding: 0.4em 0px;
+	font-size: 0.9em;
+	color: #CCCCCC;
+}
+#container #content div.chapterNav ul {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+#container #content div.chapterNav ul li {
+	display: inline;
+	margin: 0px 0.3em;
+}
+#container #content div.chapterNav img {
+	border: none;
+	vertical-align: middle;
+	padding: 0px 0.3em;
+}
+
+#container #content div.chapterEnd {
+	border: 2px solid #993300;
+	padding: 0.5em 1.5em;
+	margin: 1em 0px;
+	font-size: 1.1em;
+	background-color: #F8F8F8;
+	color: #993300;
+}
+
+#footer {
+	float: none;
+	clear: both;
+	text-align: center;
+	font-size: 85%;
+	border-top: 1px solid #CCCCCC;
+	margin-top: 4em;
+	padding-top: 0.5em;
+}
+#footer ul {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+#footer li {
+	display: inline;
+	/*border-right: 1px solid #CCCCCC;*/
+	margin-right: 0.4em;
+	padding-right: 0.6em;
+}
+#footer p {
+
+}
+#footer #footerMenu,
+#footer #copyrights,
+#footer #footerMenu p,
+#footer #copyrights p {
+	margin: 0;
+}
+
+#footer #logos {
+	border-bottom: 1px dashed #CCCCCC;
+	margin-bottom: 0.8em;
+}
+
+#footer #logos img {
+	margin: 0px 3%;
+}
+
+
+
+
+
+
+/**
+ * ESTO ES PARA EDICI&Oacute;N Y MONTAJE DE CONTENIDOS SOLAMENTE
+ */
+html body #container #content .pending {
+	background: Yellow;
+}
+html body #container #content .pending:after {
+	content: " ¡PENDIENTE!";
+	font-weight: bold;
+	color: red;
+}
+
+
+
+
+
+/**
+ * Columna de navegaci&oacute;n interior:
+ *
+**/
+#container #innerNav {
+	width: 160px;
+	float: left;
+	margin-top: 1.4em;
+}
+#container #innerNav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#container #innerNav li {
+	margin-bottom: 0.8em;
+	margin-left: 20px;
+	list-style-image: url(../images/blt_innernav.html);
+}
+#container #innerNav li a {
+	color: #993300;
+}
+
+
+
+
+
+/**
+ * Layout y elementos de Glosario
+ */
+#container #content div.glossary ul.index{
+	display: block;
+	margin: 0px;
+	padding: 0px 0px 0.4em 0px;
+}
+#container #content div.glossary ul.index li {
+	display: inline;
+	list-style: none;
+	margin: 0px 0.2em;
+}
+#container #content div.glossary h2 {
+	font-size: 1.8em;
+}
+#container #content div.glossary dl dt {
+	float: none;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #536168;
+}
+dl dd {
+	margin-bottom: 1em;
+} 
+
+
+
+/**
+ * Secci&oacute;n recursos:
+ */
+#container #content dl.resourceList {
+	font-size: 1em;
+}
+#container #content dl.resourceList dd {
+	border-bottom: 1em solid #FFFFFF;
+}
+#container #content dl.resourceList dd p {
+	margin: 0.3em 0px;
+}
+
+
+
+
+#container #content img.sectionPic {
+	float: left;
+	border: none;
+	margin: 0px 0.4em 0.4em 0px;
+}
+
+
+
+#container #content div.group {
+	
+}
+#container #content div.group div.groupElement {
+	width: 30%;
+	margin: 0px 0.6em 1em 0.6em;
+	float: left;
+}
+
+
+
+/**
+ * P&aacute;gina QUIENES SOMOS
+ */
+#container #content #QSsignature {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 1em 0px 1em 5%;
+	color: #666666;
+}
+#container #content #QSlogos {
+	text-align: center;
+}
+#container #content #QSlogos img {
+	margin: 1em 3%;
+}
+
+
+
+
+
+
+
+
+#container #content div.fileTypesInfo {
+	float: right;
+	border: 1px solid #999999;
+	font-size: 0.85em;
+	padding: 0px;
+	margin: 0px 0px 1em 1em;
+	width: 200px;
+}
+#container #content div.fileTypesInfo h2 {
+	font-size: 1.05em;
+	border: none;
+	border-bottom: 1px solid #999999;
+	padding: 0.2em 0.4em;
+	margin: 0px;
+	background: #E6E8EE;
+}
+#container #content div.fileTypesInfo ul {
+	margin: 0.6em;
+	padding: 0px;
+	list-style: none;
+}
+#container #content div.fileTypesInfo ul li {
+	margin: 0.4em 0px;
+}
+#container #content div.fileTypesInfo ul img {
+	vertical-align: top;
+}
+#container #content div.fileTypesInfo p {
+	line-height: 1.1em;
+	margin: 0.4em 0.6em 0.8em 0.6em;
+}
+
+
+
+
+
+
+/**
+ * Mapa de Contenidos en base a listas
+ */
+
+
+ul.contentMap {
+	font-size: 0.9em;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.contentMap ul {
+	/*border-left: 1px dotted #CCCCCC;*/
+}
+
+ul.contentMap li {
+	list-style: none;
+	margin: 0.6em 0.1em;
+	display: block;
+	width: 120px;
+}
+* html ul.contentMap li {
+	margin: 0.1em;
+}
+ul.contentMap p.listItemLabel {
+	border: 1px solid #999999;
+	height: auto;
+	width: auto;
+	padding: 0.6em 0.6em 0.6em 15px;
+	text-align: center;
+	background: #FFFFFF;
+}
+* html ul.contentMap p.listItemLabel {
+	margin: 0.3em;
+}
+ul.contentMap li li p.listItemLabel {
+	background: #EEEEEE;
+}
+ul.contentMap li li li p.listItemLabel {
+	background: #DDDDDD;
+}
+ul.contentMap li li li li p.listItemLabel {
+	background: #CCCCCC;
+}
+
+
+ul.contentMap li p.listItemLabel:hover {
+	background: #FFCC00;
+}
+
+
+ul.contentMapList {
+	font-size: 0.9em;
+	margin: 0px 0px 0px 20px;
+	padding: 0px;
+}
+ul.contentMapList ul {
+	margin: 0.2em 0px 0.2em 1.5em;
+	padding: 0px;
+}
+ul.contentMapList li {
+	list-style: disc;
+	display: list-item;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#container #content div.message {
+	background: #FFFFFF;
+}
+#container #content div.message h2 {
+	margin: 0px;
+}
+#container #content div.message.error {
+	border: 1px dotted #CC0000;
+	padding: 0.5em 1em;
+}
+#container #content div.message.error h2 {
+	color: #CC0000;
+}
+
+
+/**
+ * Soluci&oacute;n espec&iacute;fica para subportada de Gu&iacute;a.
+ */
+#container #content  h2#chap01 {
+	clear: both;
+}
+
+
+p.note, div.note {
+	border: 2px dotted #666666;
+	padding: 1em 2em;
+	background-color: #F8F8F8;
+	font-size: 0.9em;
+	margin: 1.5em 0px 1em 0px;
+}

@@ -1,0 +1,339 @@
+/*
+ * $Id: main.css,v 1.2 2004/03/05 18:48:40 nelson Exp $
+ * 
+ * Hoja de estilos para presentaci&oacute;n de los elementos principales comunes a
+ * todo el sitio. Se establecen tama&ntilde;os, fuentes, solores y otros atributos 
+ * a excepci&oacute;n de elementos de diagramaci&oacute;n, posici&oacute;n o distribuci&oacute;n general.
+ * 
+ * @media		screen
+ * @ua			IE5+, Mozilla 1.3+, Konqueror X, Opera X
+ * @level		2
+ * @name			main.css
+ * @version		$Revision: 1.2 $
+ * @since		$Date: 2004/03/05 18:48:40 $
+ * @author		Nelson Rodr&iacute;guez-Pe&ntilde;a <nelson@webstudio.cl>
+ *
+ */
+
+
+/**
+ * Se importa CSS para layout, permitiendo que browsers que no soporten 
+ * at-rules ni menos CSS2 s&oacute;lo utilicen la presente hoja con reglas 
+ * b&aacute;sicas de formato de texto.
+ */
+@import url(layout.css);
+
+
+body {
+	/* 
+	La fuente principal para el sitio es Trebuchet MS, que seg&uacute;n ciertas 
+	encuestas se encuentra en un 89% en Windows y MacOS; para Unix se 
+	define una fuente alternativa, Lucida; finalmente, se usar&aacute;n las 
+	fuentes tradicionales sin serif.
+	*/
+	font-family: "Trebuchet MS", Verdana, Lucida, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	color: #333333;
+	background-color: #FFFFFF;
+}
+
+a {
+	text-decoration: underline;
+	background-color: transparent;
+}
+a:link {
+	color: #000066;
+}
+a:visited {
+	color: #503267;
+}
+a:hover,
+a:active {
+	color: #0000CC;
+}
+a strong {
+	color: inherit;
+}
+
+a img {
+	border: none;
+}
+
+/**
+ * S&oacute;lo IE: IE no soporta herencia en este contexto:
+ */
+* html a strong {
+	color: #000066;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Trebuchet MS", Verdana, Lucida, Arial, Helvetica, sans-serif;
+}
+h1 {
+	font-size: 140%;
+	color: #444444;
+	background-color: transparent;
+	margin: 0.2em 0px 0.3em 0px;
+}
+h2 {
+	font-size: 120%;
+	color: #555555;
+	background-color: transparent;
+	margin-bottom: 0.3em;
+}
+h3 {
+	font-size: 110%;
+	color: #666666;
+	background-color: transparent;
+	margin-bottom: 0.2em;
+}
+h4 {
+	font-size: 105%;
+	color: #777777;
+	background-color: transparent;
+	margin-bottom: 0.2em;
+}
+
+p {
+	margin: 0.6em 0px;
+	line-height: 1.5em;
+}
+
+strong {
+	font-weight: bold;
+	color: #993300;
+	background: transparent;
+}
+
+table {
+	width: 98%;
+}
+table tr.even {
+	background-color: #F5F5F5;
+}
+table tr.odd,
+table tr {
+	background-color: #FFFFFF;
+}
+
+table,
+table.checkListTable {
+	border-collapse: collapse;
+	border-top: 2px solid #666666;
+	border-bottom: 2px solid #666666;
+	margin: 1.4em 0px;
+}
+table thead,
+table.checkListTable thead {
+	border-bottom: 2px solid #666666;
+}
+table tbody tr td, 
+table.checkListTable tbody tr td {
+	border-bottom: 1px solid #AAAAAA;
+	font-size: 0.9em;
+}
+table thead tr,
+table.checkListTable thead tr {
+	color: #FFFFFF;
+	background: #999999;
+}
+table thead tr th,
+table.checkListTable thead tr th {
+	text-align: center;
+}
+table tbody th,
+table.checkListTable tbody th {
+	color: #444444;
+	background: #DDDDDD;
+	border-bottom: 2px solid #AAAAAA;
+	text-align: left;
+}
+table.checkListTable #chckNumber {
+	width: 2em;
+	text-align: right;
+	vertical-align: top;
+}
+table.checkListTable #chckYes,
+table.checkListTable #chckNo {
+	width: 30px;
+	text-align: center;
+}
+
+
+li {
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+
+/**
+ * Definition lists y subelementos
+ */
+dl {
+	margin-left: 1em;
+}
+dl dl {
+	margin-left: 0em;
+	margin-top: 0.6em;
+}
+dl dt {
+	font-weight: bold;
+	float: left;
+	margin-right: 0.4em;
+	color: #3A4B56;
+}
+dl dd {
+	margin-bottom: 0.6em;
+} 
+
+ul.singleList li {
+	list-style: none;
+}
+ol.alpha {
+	list-style: lower-alpha;
+}
+
+ul.linkIndex,
+ol.linkIndex {
+	font-size: 0.9em;
+}
+ul.linkIndex li,
+ol.linkIndex li {
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+
+/**
+ * Presentaci&oacute;n para acr&oacute;nimos y abreviaciones; debido a que IE
+ * no soporta el elemento ABBR, se provee una soluci&oacute;n alternativa 
+ * con SPAN.ABBR.
+ */
+acronym, 
+abbr,
+span.abbr {
+	cursor: help;
+	color: #336600;
+	font-family: "Times New Roman", Times, serif;
+	border-bottom: 1px dashed #339900;
+	margin: 0px 0.4em;
+}
+
+a.glossaryTerm {
+	background: #FFFFFF url(../images/icn_glossarylink.gif) no-repeat right center;
+	padding: 0.1em 16px 0.1em 0.2em;
+	color: #339900;
+}
+
+a.details {
+	font-size: 0.9em;
+}
+
+
+code,
+p.code {
+	font: 1em "Courier New", Courier, monospace;
+	color: #993300;
+}
+
+p.code {
+	display: block;
+	margin: 1em 1.4em;
+	padding: 1em;
+	border-top: 1px dotted #e1e1e1;
+	border-bottom: 1px dotted #e1e1e1;
+	background-color: #f5f5f5;
+	/** 
+	 * IE6 no interpreta correctamente el valor PRE, se corrige 
+	 * parcialmente con PRE-WRAP
+	 */
+	white-space: pre-wrap;
+}
+/**
+ * Se usa WRAP para browsers con soporte:
+ */
+html>body p.code {
+	white-space: pre;
+}
+
+q {
+	font-family: "Times New Roman", Times, serif;
+	font-style: normal;
+	color: #993300;
+	font-size: 1.1em;
+}
+
+
+
+
+#container {
+
+}
+
+
+
+
+.imgSet {
+	display: block;
+	margin: 0.6em 1.5em 0.6em 0px;
+	font-size: 90%;
+	color: #999999;
+	float: left;
+	width: 40%;
+}
+
+.imgSet img {
+	display: inline;
+	margin: 0px;
+	float: left;
+	margin-right: 10px;
+	padding-right: 5px;
+	border-right: 1px dashed #CCCCCC;
+}
+.imgSet p.caption {
+	line-height: 1.2em;
+}
+
+
+#access {
+	clear: both;
+}
+
+
+
+
+
+
+/**
+ * V&iacute;nculos especiales para archivos:
+ */
+a.file {
+	padding-left: 20px;
+}
+a.file.pdf {
+	background: url("../images/icn.file.pdf.gif") left top no-repeat;
+}
+a.file.htm {
+	background: url("../images/icn.file.htm.gif") left top no-repeat;
+}
+a.file.doc {
+	background: url("../images/icn.file.doc.gif") left top no-repeat;
+}
+a.file.zip {
+	background: url("../images/icn.file.zip.gif") left top no-repeat;
+}
+a.file.rtf {
+	background: url("../images/icn.file.rtf.gif") left top no-repeat;	
+}
+a.file.xls {
+	background: url("../images/icn.file.xls.gif") left top no-repeat;
+}
+
+a.file.pdf, a.file.htm, a.file.doc, a.file.zip, a.file.rtf, a.file.xls {
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	padding: 0px 0px 0px 20px;
+	line-height: 1.3em;
+}

@@ -1,0 +1,815 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+ 
+
+<!-- Mirrored from www.guiaweb.gob.cl/guia/capitulos/cuatro/queprobar.htm by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 29 Nov 2011 22:10:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+ 
+<title>Gu&iacute;a Web 1.0 - C&oacute;mo y Qu&eacute; Probar</title>
+ 
+<!-- METADATA -->
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><!-- INICIO DUBLIN CORE META DATA -->
+<!-- http://dublincore.org/ -->
+<meta name="DC.Title" content="Guia para el Desarrollo de Sitios Web - Gobierno de Chile" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#title" />
+<meta name="DC.Creator.CorporateName" content="Modernizaci&oacute;n y Gobierno Electr&oacute;nico" />
+<meta name="DC.Creator.CorporateName.Address" content="guiaweb@minsegpres.gob.cl" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#creator" />
+<meta name="DC.Subject" content="Desarrollo Sitios Web" />
+<meta name="DC.Subject" content="Gobierno de Chile" />
+<meta name="DC.Subject" content="Usabilidad Sitios Web" />
+<meta name="DC.Subject" content="Accesibilidad Sitios Web" />
+<meta name="DC.Subject" content="Experiencia de Usuario" />
+<meta name="DC.Subject" content="Dise&ntilde;o de interfaces" />
+<meta name="DC.Subject" content="Gobierno Electr&oacute;nico" />
+<meta name="DC.Subject" content="Accesibilidad Sitios Web" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#subject" />
+<meta name="DC.Description" content="Esta Guia establece estandares para el desarrollo de Sitios Web orientados a los usuarios de las instituciones del Gobierno de Chile" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#description" />
+<meta name="DC.Publisher" content="Ministerio Secretar&iacute;a General de la Presidencia" />
+<meta name="DC.Publisher.Address" content="guiaweb@minsegpres.gob.cl" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#publisher" />
+<meta name="DC.Contributor" content="Paulo Saavedra" />
+<meta name="DC.Contributor" content="Nelson Rodr&iacute;guez-Pe&ntilde;a" />
+<meta name="DC.Contributor" content="Juan C. Camus" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#contributor" />
+<meta name="DC.Date" scheme="scheme" content="2003-12-31" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#date" />
+<meta name="DC.Type" content="Text.Homepage" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#type" />
+<meta name="DC.Format" scheme="scheme" content="text/html" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#format" />
+<link rel="SCHEMA.imt" href="http://sunsite.auc.dk/RFC/rfc/rfc2046.html" />
+<meta name="DC.Identifier" content="../../../index.html" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#identifier" />
+<meta name="DC.Language" scheme="scheme" content="es" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#language" />
+<meta name="DC.Rights" scheme="scheme" content="../../../copyright.html" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#rights" />
+<meta name="DC.Date.X-MetadataLastModified" scheme="scheme" content="2003-12-24" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#date" /><!-- FIN DUBLIN CORE META DATA -->
+<!-- METADATA COMUN -->
+ 
+ 
+<!-- CSS -->
+<link href="../../../styles/main.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/print.css" rel="stylesheet" type="text/css" media="print" /> 
+ 
+<!-- SCRIPTS -->
+
+<script type="text/javascript" src="../../../scripts/uifunctions.js">
+</script> 
+ 
+  
+<link rel="shortcut icon" href="../../../favicon.ico" /> 
+</head>
+<body>
+<div id="pageHeader"><a name="top" id="top"></a> 
+<div id="corpLogo">
+<div id="printLogo"><img src="../../../images/hd.logo.print.jpg" alt="Logo." /> 
+<p>Gu&iacute;a para el Desarrollo de Sitios Web - Gobierno de Chile</p>
+</div>
+
+<div id="screenLogo"><img src="../../../images/hd.logo.jpg" alt="Logo." /></div>
+</div>
+
+<div id="uiMainMenu">
+<ul>
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../../index.htm" title="P&aacute;gina principal.">Portada</a></li>
+
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../index.htm" title="Gu&iacute;a para el desarrollo de Sitios Web versi&oacute;n 1.0 - Gobierno de Chile.">Gu&iacute;a Web V 1.0</a></li>
+
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../../guia-v2/index.htm" title="Gu&iacute;a para el desarrollo de Sitios Web versi&oacute;n 2.0 - Gobierno de Chile.">Gu&iacute;a Web V 2.0</a></li>
+
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../../recursos/index.htm" title="">Recursos</a></li>
+
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../glosario.htm" title="Glosario de t&eacute;rminos.">Glosario</a></li>
+
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../../quienes.htm" title="">Qui&eacute;nes Somos</a></li>
+</ul>
+</div>
+
+<div id="gwConcept"><img src="../../../images/hd.pic.new.jpg" alt="Gu&iacute;a para el Desarrollo de Sitios Web - Gobierno de Chile." /></div>
+
+<div id="uiToolsMenu">
+<ul>
+<li><a class="actionLink" href="../../../mapa.htm" title="Mapa de contenidos del sitio."><img class="actionIcon" src="../../../images/icn_tool_map.gif" alt="Mapa de contenidos del sitio." /><span class="actionLabel">Mapa</span></a></li>
+
+<li><a class="actionLink" href="../../../contacto.html" title="Informaci&oacute;n de contacto."><img class="actionIcon" src="../../../images/icn_tool_contact.gif" alt="Informaci&oacute;n de contacto." /><span class="actionLabel">Contacto</span></a></li>
+
+<li><a class="actionLink" href="../../../recomendar.html" title="Recomendar este sitio a un amigo."><img class="actionIcon" src="../../../images/icn_tool_tellafriend.gif" alt="Recomendar este sitio a un amigo." /><span class="actionLabel">Recomendar</span></a></li>
+</ul>
+</div>
+</div>
+
+<div id="container" class="intStandard">
+<div id="uiSectionMenu"> 
+<ul class="menuGuia">
+<li class="mgItem0"><a href="../../index.htm" title="Ir a Gu&iacute;a Web">Gu&iacute;a Web</a></li>
+
+<li class="mgItem1"><a href="../uno/index.htm" title="Ir a Planificaci&oacute;n Inicial de un Sitio Web">Planificaci&oacute;n Inicial de un Sitio Web</a></li>
+
+<li class="mgItem2"><a href="../dos/index.htm" title="Ir a Definici&oacute;n del Sitio Web">Definici&oacute;n del Sitio Web</a></li>
+
+<li class="mgItem3"><a href="../tres/index.htm" title="Ir a Dise&ntilde;o Web y Est&aacute;ndares">Dise&ntilde;o Web y Est&aacute;ndares</a></li>
+
+<li class="mgItem4"><a href="index.htm" title="Ir a Puesta en Marcha del Sitio Web">Puesta en Marcha del Sitio Web</a></li>
+
+<li class="mgItem5"><a href="../cinco/index.htm" title="Ir a Plan de Mantenci&oacute;n del Sitio Web">Plan de Mantenci&oacute;n del Sitio Web</a></li>
+
+<li class="mgItem6"><a href="../../archivos/index.htm" title="ir a Descarga de Archivos">Descarga de Archivos</a></li>
+
+<li class="mgItem7"><a href="../../checklists/index.htm" title="Ver Pautas de control para la Gu&iacute;a Web.">Checklists</a></li>
+</ul>
+
+  
+</div>
+
+<ul class="breadCrumbs">
+<li class="label">Usted est&aacute; en:</li>
+
+<li class="first"><a href="../../../index.htm" title="Portada del sitio.">Portada</a></li>
+
+ 
+<li><a href="../../index.htm" title="">Gu&iacute;a Web</a></li>
+
+<li><a href="index.htm" title="">Cap&iacute;tulo IV</a></li>
+
+ 
+</ul>
+
+<div id="content"> 
+<h1><a name="t01comoque" id="t01comoque"></a>C&oacute;mo y Qu&eacute; Probar</h1>
+
+<div class="uiPageContents">
+<h2><span class="text">En esta P&aacute;gina</span></h2>
+
+<div>
+<ul>
+<li><a href="#t02intcont">Pruebas de Interfaces y Contenidos</a></li>
+
+<li><a href="#t02funcionalidad">Pruebas de Funcionalidades y Operaci&oacute;n</a></li>
+
+<li><a href="#t02carga">Pruebas de Carga</a></li>
+
+<li><a href="#t02seguridad">Pruebas de Seguridad</a> 
+<ul>
+<li><a href="#t03dns">Manejo de DNS</a></li>
+
+<li><a href="#t03estructura">Protecci&oacute;n de la Estructura Interna del Sitio Web</a></li>
+
+<li><a href="#t03robots">Protecci&oacute;n Contra Robots</a></li>
+
+<li><a href="#t03privacidad">Manejo de Privacidad</a></li>
+
+<li><a href="#t03canalesseg">Canales Seguros</a></li>
+
+<li><a href="#t03acceso">Mecanismos de Control de Acceso</a></li>
+
+<li><a href="#t03protprog">Protecci&oacute;n de Programas</a></li>
+
+<li><a href="#t03hosting">Hosting Externo vs. Sitio Propio</a></li>
+
+<li><a href="#t03roles">Roles M&iacute;nimos a Asegurar</a></li>
+</ul>
+</li>
+
+<li><a href="#t03respaldo">Pruebas de Respaldo y Recuperaci&oacute;n</a></li>
+
+<li><a href="#t03regcontrol">Registro y Control de Pruebas y Errores</a></li>
+</ul>
+</div>
+</div>
+
+<p>Con el fin de probar las diferentes capacidades de un Sitio Web, es necesario dividir el trabajo en cinco &aacute;reas, que son:</p>
+
+<ul>
+<li>Pruebas de Interfaces y Contenidos</li>
+
+<li>Pruebas de Funcionalidades y Operaci&oacute;n</li>
+
+<li>Pruebas de Carga</li>
+
+<li>Pruebas de Seguridad</li>
+
+<li>Pruebas de Respaldo y Recuperaci&oacute;n</li>
+</ul>
+
+<p>Por cada una de ellas hay actividades espec&iacute;ficas a realizar, de las cuales se entrega un detalle a continuaci&oacute;n.</p>
+
+<h2><a name="t02intcont" id="t02intcont"></a>Pruebas de Interfaces y Contenidos</h2>
+
+<p>Las actividades de esta etapa consisten en hacer revisiones precisas de la forma en que se despliegan las p&aacute;ginas del sitio y ver si cumplen con los <strong>T&eacute;rminos de Referencia</strong> en estos temas y, adem&aacute;s, si cumplen con los est&aacute;ndares m&iacute;nimos que se hayan definido como meta a ser cumplida (ver <a href="../tres/index.htm">Cap&iacute;tulo 3</a>, sobre <a href="../tres/experiencia.htm#t02interfaces">Usabilidad</a> y <a href="../tres/accesibilidad.htm">Accesibilidad</a>).</p>
+
+<p>Las acciones de prueba sugeridas para realizar en esta etapa son las siguientes:</p>
+
+<dl>
+<dt>Verificaci&oacute;n de Contenidos:</dt>
+
+<dd>es una prueba b&aacute;sica para revisar si el Sitio Web desarrollado incluye todos los contenidos que se han especificado en los <strong>T&eacute;rminos de Referencia</strong> o los que se hayan definido en el marco del plan de desarrollo. Se puede hacer en forma manual o autom&aacute;tica, de acuerdo a las siguientes orientaciones: 
+<dl>
+<dt>Sistema Manual:</dt>
+
+<dd>se refiere a hacer una revisi&oacute;n manual de los contenidos del Sitio Web a trav&eacute;s de la navegaci&oacute;n de sus p&aacute;ginas. Para ello se recomienda primero construir un &iacute;ndice de contenidos y luego verificar la existencia de cada uno de los &iacute;temes que contiene, a trav&eacute;s de hacer un recorrido exhaustivo del sitio. Los elementos que deben probarse obligatoriamente son: 
+<ul>
+<li>Verificaci&oacute;n de ortograf&iacute;a y redacci&oacute;n</li>
+
+<li>Verificaci&oacute;n de enlaces principales</li>
+
+<li>Verificaci&oacute;n de im&aacute;genes en p&aacute;ginas</li>
+
+<li>Verificaci&oacute;n de existencia de archivos adjuntos</li>
+
+<li>Verificaci&oacute;n de la <a href="../../checklists/accesibilidad.htm">Lista de Chequeo de Accesibilidad (Cap&iacute;tulo3)</a></li>
+</ul>
+</dd>
+
+<dt>Sistema Autom&aacute;tico:</dt>
+
+<dd>especialmente orientado a la verificaci&oacute;n de enlaces rotos, lo cual se puede hacer utilizando sistemas basados en Internet o, bien, software especializado.</dd>
+
+<dt>Sistemas Basados en Internet:</dt>
+
+<dd>se recomienda usar el servicio del <abbr title="World Wide Web Consortium." lang="en">W3C</abbr> <strong>Check Link</strong> ( <a href="http://validator.w3.org/checklink" title="Verificador de v&iacute;nculos de W3C.">http://validator.w3.org/checklink</a>).</dd>
+
+<dt>Software:</dt>
+
+<dd>
+<p>se recomienda bajar y usar desde su computador el software gratuito <strong>Xenu</strong> (<a href="http://home.snafu.de/tilman/xenulink.html" title="Sitio web de Xenu.">http://home.snafu.de/tilman/xenulink.html</a>). De igual manera, los actuales software de creaci&oacute;n de sitios Web permiten manejar en forma controlada los enlaces internos; un error com&uacute;n de este tipo es que una foto se vea normalmente en el computador de desarrollo, pero no en el Sitio Web, Esto ocurre porque es referida en forma absoluta desde una ubicaci&oacute;n en un disco duro local o en red, en lugar de un directorio de im&aacute;genes del Sitio Web.</p>
+
+<div class="stressed">
+<p>Nota: se recomienda hacer estas pruebas en ambientes controlados diferentes a los usados para el desarrollo (diferentes redes y computadores), para que los resultados sean confiables.</p>
+</div>
+</dd>
+</dl>
+</dd>
+
+<dt>Sitio en Construcci&oacute;n:</dt>
+
+<dd>se debe verificar que el Sitio Web no contenga espacios vac&iacute;os o que tenga el t&iacute;tulo de <strong>en construcci&oacute;n</strong>. No es adecuado, bajo ning&uacute;n sentido, usar espacios con dicha leyenda; en tal caso es preferible eliminar esa zona y volver a incluirla cuando exista el contenido correspondiente en el sitio.</dd>
+
+<dt>Verificaci&oacute;n de Meta Tags:</dt>
+
+<dd>los <a class="glossaryTerm" href="../../glosario.htm#Met001" title="Ver t&eacute;rmino en glosario.">meta tags</a> son marcas en lenguaje <abbr title="HyperText Markup Language." lang="en">HTML</abbr> que van en la parte superior de cada p&aacute;gina, a trav&eacute;s de las cuales se entrega a los sistemas de indexaci&oacute;n y b&uacute;squeda (como <a href="http://www.google.com/" title="Sitio web de Google.">Google</a>, <a href="http://www.yahoo.com/" title="Sitio web de Yahoo!">Yahoo!</a> y otros), la informaci&oacute;n m&iacute;nima que se debe tener en cuenta para hacer una correcta indexaci&oacute;n del contenido que incluye. Los <strong>meta tags</strong> son elementos que obedecen a un est&aacute;ndar definido por el <a class="glossaryTerm" href="../../glosario.htm#Wor001" title="Ver t&eacute;rmino en glosario.">World Wide Web Consortium</a> (<a href="http://www.w3c.org/" title="Sitio web del W3C.">http://www.w3c.org</a>) por lo que su uso est&aacute; regulado. Para verificar que dichas marcas cumplen con los elementos m&iacute;nimos requeridos por los buscadores, existen herramientas en Internet que permiten hacer tal prueba y ofrecen recomendaciones para mejorar la informaci&oacute;n ingresada en dicha &aacute;rea.</dd>
+
+<dt>Verificaci&oacute;n de Est&aacute;ndares:</dt>
+
+<dd>aunque los Sitios Web pueden ser construidos a partir de diferentes lenguajes, todos deben cumplir ciertas normas de organizaci&oacute;n de su c&oacute;digo fuente (sintaxis), que permitan su visualizaci&oacute;n por software equivalente en diferentes plataformas. Dicha sintaxis est&aacute; estandarizada y puede ser probada a trav&eacute;s de herramientas p&uacute;blicas que est&aacute;n disponibles en Internet. Las dos m&aacute;s importantes son: 
+<dl>
+<dt>Validaci&oacute;n de HTML:</dt>
+
+<dd>la realiza el World Wide Web Consortium (<a href="http://validator.w3.org/" title="Validador de HTML de W3C.">http://validator.w3.org</a>) e indica si el c&oacute;digo usado en la p&aacute;gina es correcto. Como resultado entrega un reporte con los eventuales errores para ayudar a su reparaci&oacute;n.</dd>
+
+<dt>Validaci&oacute;n de CSS:</dt>
+
+<dd>la realiza el World Wide Web Consortium ( <a href="http://jigsaw.w3.org/css-validator/" title="Validador de CSS de W3C.">http://jigsaw.w3.org/css-validator/</a>) e indica si la <a class="glossaryTerm" href="../../glosario.htm#Css001" title="Ver t&eacute;rmino en glosario.">Hoja de Cascada de Estilo</a> (Cascading Style Sheet) cumple con la sintaxis est&aacute;ndar y por lo tanto podr&aacute; ser visualizada correctamente en todos los sistemas.}</dd>
+</dl>
+</dd>
+
+<dt>Verificaciones de Interfaces:</dt>
+
+<dd>mediante esta prueba se revisan aspectos gr&aacute;ficos del Sitio Web, para determinar si su despliegue en las p&aacute;ginas es correcto. Dentro de los elementos m&aacute;s importantes a ser verificados, se incluyen los siguientes: 
+<dl>
+<dt>Plug-ins necesarios:</dt>
+
+<dd>cuando se utilicen elementos audiovisuales o interactivos que requieran de alg&uacute;n software incrustado para funcionar (<a class="glossaryTerm" href="../../glosario.htm#Plu001" title="Ver t&eacute;rmino en glosario.">plug-ins</a>), se debe ofrecer un enlace para que los usuarios que no lo tengan instalado, puedan bajarlo y hacer el proceso de instalaci&oacute;n. En el caso del uso de la tecnolog&iacute;a <a class="glossaryTerm" href="../../glosario.htm#Fla002" title="Ver t&eacute;rmino en glosario.">Flash</a>, las &uacute;ltimas actualizaciones del producto permiten que el software pueda ser bajado en forma autom&aacute;tica por los programas visualizadores, si se cuenta con la codificaci&oacute;n adecuada. Por lo anterior, es necesario hacer la prueba desde un computador que carezca de dicho software, para comprobar que efectivamente hace dicha operaci&oacute;n.</dd>
+
+<dt>Consistencia de la Diagramaci&oacute;n:</dt>
+
+<dd>cada una de las p&aacute;ginas del sitio debe tener elementos consistentes, con el fin de ofrecer al usuario una experiencia similar en cualquier &aacute;rea del Sitio Web; por nombrar s&oacute;lo tres aspectos, lo anterior implica que los men&uacute;s deben aparecer siempre en el mismo lugar; que los listados deben estar dise&ntilde;ados de similar manera en todo el sitio y que los colores y formas de uso de las interfaces deben ser similares a lo largo de las p&aacute;ginas.</dd>
+
+<dt>Ancho de la Diagramaci&oacute;n:</dt>
+
+<dd>
+<p>si la diagramaci&oacute;n del sitio se ha realizado para un ancho determinado (por ejemplo, 800 pixeles de ancho), en esta etapa se debe probar si ello se cumple. Asimismo, se debe probar en una pantalla configurada con una menor dimensi&oacute;n (por ejemplo 640 x 480 pixeles), cu&aacute;l es el &aacute;rea visible del sitio y c&oacute;mo afecta eso a la navegaci&oacute;n por el mismo. Otra prueba del mismo estilo, se refiere a usar un programa visualizador orientado s&oacute;lo a texto como Lynx ( <a href="http://www.delorie.com/web/lynxview.html" title="Sitio web de Lynx.">http://www.delorie.com/web/lynxview.html</a>), para obtener visiones alternativas de la manera en que los usuarios est&aacute;n accediendo a la informaci&oacute;n que se les ofrece.</p>
+
+<p>En este aspecto, en caso de existir, es de inter&eacute;s contar con un estudio del <a class="glossaryTerm" href="../../glosario.htm#Log001" title="Ver t&eacute;rmino en glosario.">log</a> del servidor que muestre la forma en que los usuarios est&aacute;n accediendo a las p&aacute;ginas, porque de esa manera se podr&aacute; determinar hacia qu&eacute; configuraci&oacute;n de pantalla se debe atender con mayor prioridad. La norma en este aspecto es que sin importar las caracter&iacute;sticas t&eacute;cnicas que tenga el computador del usuario que accede al Sitio Web, &eacute;ste siempre se vea ordenado y legible.</p>
+</dd>
+
+<dt>Diagramaci&oacute;n vs. Browsers:</dt>
+
+<dd>aunque la codificaci&oacute;n en los lenguajes soportados por los programas visualizadores (<a class="glossaryTerm" href="../../glosario.htm#Bro001" title="Ver t&eacute;rmino en glosario.">browsers</a>) puede apegarse a los est&aacute;ndares, no todos muestran de la misma manera los Sitios Web. Dado esto, es necesario revisar el sitio en diferentes tipos de programas, especialmente en aquellos que conforman la minor&iacute;a, al momento de escribir este Manual. Es decir, las pruebas al menos deber&iacute;an hacerse en <strong>Microsoft Internet Explorer</strong> (<a href="http://www.microsoft.com/downloads/Browse.aspx?displaylang=en&amp;wt_svl=10366WH_OS_Other1&amp;mg_id=10366WHb1#" title="Internet Explorer en el sitio de Microsoft.">http://www.microsoft.com/explorer</a>), <strong>Opera</strong> (<a href="http://www.opera.com/" title="Sitio web de Opera.">http://www.opera.com</a>) y <strong>Mozilla Firefox</strong> (<a href="http://www.mozilla-europe.org/es/" title="Descarga Firefox en espa&ntilde;ol">http://www.mozilla-europe.org/es/</a>), ya que con ellos se cubrir&aacute; un amplio espectro. Lo que se debe revisar en este caso es el despliegue de todos los elementos que se muestran en la pantalla, para asegurar de que aparecen en las posiciones que se les han asignado en el dise&ntilde;o.</dd>
+
+<dt>Diagramaci&oacute;n vs. Sistema Operativo:</dt>
+
+<dd>tal como se explic&oacute; en el caso anterior, los diferentes sistemas operativos pueden establecer diferencias en la forma en que se muestran los Sitios Web. Por ello, es importante conocer cu&aacute;les son los sistemas operativos utilizados por la audiencia a la que se desea llegar y revisar el despliegue del sitio en ellos. Hay que recordar que, adem&aacute;s de Microsoft Windows, los usuarios pueden estar visualizando el sitio desde computadores equipados con Apple Macintosh o diferentes versiones del sistema operativos Unix.</dd>
+
+<dt>Im&aacute;genes Escaladas:</dt>
+
+<dd>se debe verificar que las im&aacute;genes que aparezcan en el sitio no est&eacute;n siendo mostradas en tama&ntilde;o reducido artificialmente; es decir, que se tome una imagen de grandes dimensiones y por programaci&oacute;n se muestre en un tama&ntilde;o menor. El efecto de eso es que las p&aacute;ginas con ese tipo de im&aacute;genes ser&aacute;n muy pesadas y har&aacute;n que el acceso a ellas sea lento. Para comprobarlo, se debe solicitar las <strong>Propiedades</strong> de la imagen; en la ventana que se muestra se indica el peso de la imagen, que no deber&iacute;a sobrepasar los 5<abbr title="Kilobytes" lang="en">Kb</abbr> para las de tama&ntilde;o peque&ntilde;o (iconos y thumbnails) y los 25Kb, para los de tama&ntilde;o mediano (fotograf&iacute;as en noticias). Es importante considerar que, adem&aacute;s de estas verificaciones individuales de peso de im&aacute;genes, el l&iacute;mite de peso para una p&aacute;gina es de 100Kb, incluyendo todos sus elementos.</dd>
+
+<dt>Im&aacute;genes Sin Atributo ALT:</dt>
+
+<dd>para cumplir con las normas de accesibilidad es necesario que todas las im&aacute;genes que se usen en un Sitio Web, tengan una descripci&oacute;n utilizando el atributo <code>ALT</code> (para texto alterno) del lenguaje <abbr title="HyperText Markup Language" lang="en">HTML</abbr>. Para comprobarlo, basta situar el mouse sobre una imagen, para que se despliegue una leyenda en texto en una etiqueta amarilla que flota sobre la foto; si eso no ocurre, el atributo no est&aacute; siendo usado y debe ser corregido e incluido.</dd>
+</dl>
+</dd>
+</dl>
+
+<h2><a name="t02funcionalidad" id="t02funcionalidad"></a>Pruebas de Funcionalidades y Operaci&oacute;n</h2>
+
+<p>Las actividades de esta etapa se refieren a hacer chequeos completos respecto de las funcionalidades y aplicaciones que ofrece el sitio, ya sean de aplicaciones simples como formularios hasta m&aacute;s complejas, como consultas y modificaciones de registros en base dedatos.</p>
+
+<p>En este sentido, las pruebas se deben hacer sobre diferentes elementos, siendo algunos de los m&aacute;s importantes los siguientes:</p>
+
+<dl>
+<dt>Validaci&oacute;n de Formularios:</dt>
+
+<dd>si el Sitio Web tiene formularios para el env&iacute;o o ingreso de datos, se debe utilizar sistemas de validaci&oacute;n del ingreso de datos para asegurar que &eacute;stos sean bien ingresados. En este aspecto, algunas de las validaciones m&aacute;s importantes deben ser las siguientes:</dd>
+
+<dt>Campos Obligatorios:</dt>
+
+<dd>se debe validar que en los formularios sean ingresados todos aquellos campos que sean necesarios; &eacute;stos deben ser marcados de alguna manera (usualmente con un asterisco) que permita a los usuarios entender la obligatoriedad de ingresar informaci&oacute;n en ellos; adicionalmente, debe indicarse tal condici&oacute;n en forma expl&iacute;cita.</dd>
+
+<dt>Validaciones Locales:</dt>
+
+<dd>para reducir la carga de validaciones en el servidor, se recomienda incorporar la mayor cantidad de &eacute;stas en el computador del cliente, utilizando en formaest&aacute;ndar el lenguaje Javascript para hacerlas.</dd>
+
+<dt>Sintaxis de Ingreso:</dt>
+
+<dd>se debe validar que, en algunos casos, los campos sean ingresados con datos v&aacute;lidos; el mejor ejemplo es el caso del ingreso del n&uacute;mero de RUT o C&eacute;dula de Identidad, cuyos n&uacute;meros tienen un algoritmo conocido para ser validado.</dd>
+
+<dt>Suscripci&oacute;n a Servicios:</dt>
+
+<dd>se debe validar que cada vez que se realice la suscripci&oacute;n a un servicio que ofrezca el Sitio Web, se env&iacute;e un e-mail al usuario (para lo cual se debe necesariamente solicitar su direcci&oacute;n de correo electr&oacute;nico) en el que se le informe sobre el resultado de lo realizado. Quien pruebe el sistema debe validar que el sistema est&eacute; enviando correctamente los e-mails y que dicho e-mail lleg&oacute; a la direcci&oacute;n correspondiente; en este caso se recomienda probar con una direcci&oacute;n de recepci&oacute;n externa a la instituci&oacute;n desde la cual se prueba.</dd>
+
+<dt>Ingreso de Datos:</dt>
+
+<dd>si se cuenta con un sistema que permita el ingreso de informaci&oacute;n hacia una base de datos, se debe revisar en la tabla de destino que efectivamente se est&eacute;n enviando los datos de la manera que se ha previsto.</dd>
+
+<dt>Reingreso y Correcci&oacute;n de Datos:</dt>
+
+<dd>para mejorar la interacci&oacute;n del Sitio Web, cuando tras el ingreso y env&iacute;o de los datos de un formulario (despu&eacute;s de la validaci&oacute;n local del formulario) el usuario presiona el bot&oacute;n <strong>Back</strong> de su programa visualizador para volver atr&aacute;s y modificar alg&uacute;n campo, se le deben presentar todos los datos que hayan sido ingresados. De esta manera se aprovecha la informaci&oacute;n ingresada previamente, evitando la frustraci&oacute;n del usuario por tener que escribir nuevamente el contenido completo del formulario.</dd>
+
+<dt>Elementos de Interfaz:</dt>
+
+<dd>al usar elementos del lenguaje HTML para la creaci&oacute;n de las pantallas (input boxes, combo boxes, list boxes, radio y check buttons, etc.), se recomienda no modificar radicalmente sus atributos de despliegue (colores, formas) y comportamientos tradicionales, para lograr que el usuario sepa intuitivamente c&oacute;mo usarlo y no deba aprenderde nuevo su operaci&oacute;n.</dd>
+
+<dt>Multiplataforma:</dt>
+
+<dd>se debe comprobar que los formularios funcionan en diferentes versiones de programas visualizadores (browsers), de sistemas operativos y de tipos de conexi&oacute;n a Internet (conmutado, banda ancha y dedicado).</dd>
+
+<dt>Botones de Interacci&oacute;n:</dt>
+
+<dd>si se cuenta con botones interactivos que permiten imprimir, enviar una p&aacute;gina a un amigo, etc. se debe validar que est&eacute;n realizando correctamente la acci&oacute;n indicada.</dd>
+
+<dt>Sistemas de B&uacute;squeda:</dt>
+
+<dd>si se cuenta con ellos, se debe validar que efectivamente permitan encontrar documentos existentes en el sitio; en este sentido se deben ingresar documentos espec&iacute;ficos y luego buscarlos de manera de asegurarse que la funcionalidad est&aacute; operando adecuadamente. Si el sistema de b&uacute;squeda tiene una versi&oacute;n de <strong>b&uacute;squeda avanzada</strong>, se debe asegurar de que las opciones ofrecidas encuentren los documentos de la manera en que se ofrezca. El formulario para hacer la b&uacute;squeda debe ser intuitivo, evit&aacute;ndose el lenguaje t&eacute;cnico y espec&iacute;fico que impida entender su funcionamiento entre usuarios con menores conocimientos de los temas abordados en la instituci&oacute;n.</dd>
+
+<dt>Sistemas de Feedback:</dt>
+
+<dd>si se cuenta con sistemas de env&iacute;o de preguntas o reclamos (al estilo de los indicados para la Oficina de Informaciones, Reclamos y Sugerencias, OIRS), se debe asegurar de que se est&aacute; completando el ciclo de vida de la consulta. En este sentido se debe validar que el sitio realiza la consulta y que &eacute;sta es recibida por el funcionario encargado de atenderla. De otra manera, la funcionalidad podr&iacute;a operar computacionalmente pero no en t&eacute;rminos de tramitaci&oacute;n.</dd>
+
+<dt>Sistemas de Compra:</dt>
+
+<dd>si se cuenta con sistemas de pago en l&iacute;nea, se debe revisar cuidadosamente el flujo de trabajo de la aplicaci&oacute;n y asegurarse de que en cada uno de los pasos se est&aacute; asegurando la calidad y seguridad de la transacci&oacute;n.</dd>
+
+<dt>Administraci&oacute;n del Error 404:</dt>
+
+<dd>cuando se ingresa una direcci&oacute;n equivocada, el software del servidor web muestra una pantalla de error anunciando el n&uacute;mero de c&oacute;digo del problema (Error 404). No obstante, dicho software puede ser configurado para que muestre una p&aacute;gina diferente, en la que se explique a los usuarios las probables razones del error. Es importante incluir, en dicha p&aacute;gina, un enlace al <strong>Mapa del Sitio</strong> y un <strong>Buscador</strong>, de tal manera que el usuario tenga m&aacute;s herramientas para resolver la inexistencia del contenido que buscaba. Se recomienda, adem&aacute;s, que el <strong>Administrador de Sistemas</strong> de la instituci&oacute;n entregue un reporte semanal basado en los <a class="glossaryTerm" href="../../glosario.htm#Log001" title="Ver t&eacute;rmino en glosario.">logs</a> del servidor, que permita ver qu&eacute; es lo que m&aacute;s buscan los usuarios y de qu&eacute; manera el Sitio Web les est&aacute; respondiendo sus consultas.</dd>
+</dl>
+
+<h2><a name="t02carga" id="t02carga"></a>Pruebas de Carga</h2>
+
+<p>La carga de trabajo se refiere a la capacidad m&aacute;xima que tiene un servidor web (hardware y software), para atender a un conjunto de usuarios de manera simult&aacute;nea. Por ello, las actividades de esta etapa tienen relaci&oacute;n con comprobar, de manera anticipada, el funcionamiento que tendr&aacute; el servidor del Sitio Web cuando est&eacute; en plena operaci&oacute;n.</p>
+
+<p>Las pruebas en este caso consisten en simular una carga de trabajo similar y superior a la que tendr&aacute; cuando el sitio est&eacute; funcionando, con el fin de detectar si el software instalado (programas y aplicaciones) cumple con los requerimientos de muchos usuarios simult&aacute;neos y tambi&eacute;n si el hardware (servidor y el equipamiento computacional de redes y enlace que lo conecta a Internet) es capaz de soportar la cantidad de visitas esperadas.</p>
+
+<p>Es importante considerar que si el servidor est&aacute; en las dependencias de un tercero que entrega el servicio de alojamiento del Sitio Web (hosting), se le debe solicitar a dicho proveedor un informe en que d&eacute; a conocer las caracter&iacute;sticas de carga de la soluci&oacute;n de hardware y software sobre la cual funciona el Sitio Web de la instituci&oacute;n.</p>
+
+<p>Hay diversos software en el mercado que est&aacute;n orientados a este tipo de simulaciones, todos los cuales ofrecen caracter&iacute;sticas similares. Entre los datos m&aacute;s relevantes que es posible obtener se cuenta:</p>
+
+<ul>
+<li>Tiempo de acceso de los usuarios a los datos</li>
+
+<li>Volumen de datos y ancho de banda utilizado</li>
+
+<li>Archivos solicitados y tiempos usados en transferencia de datos</li>
+
+<li>Tiempo de espera de los usuarios tras hacer un clic</li>
+
+<li>Tiempo de respuesta a clicks de usuarios</li>
+
+<li>Niveles de error existentes tras clicks de usuarios</li>
+</ul>
+
+<p>Como se puede apreciar del listado anterior, los reportes que se obtienen a trav&eacute;s de esta v&iacute;a se refieren a tiempos de acceso que tienen los usuarios que acceden al Sitio Web y la degradaci&oacute;n que ocurre en los servicios cuando aumenta el volumen de visitantes concurrentes.</p>
+
+<div class="imgSet" id="fig001"><img src="images/fig.001.gif" alt="Gr&aacute;fico de l&iacute;neas con datos del servidor." title="Gr&aacute;fico con an&aacute;lisis de datos del servidor." longdesc="images/fig.001.htm" /> 
+<p class="caption"><a href="images/fig.001.htm" title="Descripci&oacute;n de imagen.">[D]</a> Figura 1: Gr&aacute;fico con an&aacute;lisis de datos del servidor.</p>
+</div>
+
+<p>Un ejemplo de las pruebas que se pueden realizar en este tema se puede ver en este gr&aacute;fico que muestra los tiempos que demora en atender los requerimientos por las direcciones solicitadas tras un click de usuarios.</p>
+
+<p>Cada una de las l&iacute;neas representa un valor importante de tener en cuenta:</p>
+
+<dl>
+<dt>Click time:</dt>
+
+<dd>demora del sitio en entregar los datos tras el primer click.</dd>
+
+<dt>Time to First Byte:</dt>
+
+<dd>tiempo que se demora tras el click, en enviar el primer byte de datos.</dd>
+
+<dt>Time to Connect:</dt>
+
+<dd>tiempo de demora tras enviar el click, en establecer la conexi&oacute;n entre servidor y cliente.</dd>
+
+<dt>Time for DNS:</dt>
+
+<dd>tiempo de demora para resolver la direcci&oacute;n solicitada en el click.</dd>
+</dl>
+
+<p>Con los resultados obtenidos con pruebas de este tipo se debe hacer una revisi&oacute;n acuciosa de los sistemas, con el fin de hacer las optimizaciones que aparezcan como necesarias. Asimismo, se debe tener en cuenta que ser&aacute; normal la existencia de situaciones excepcionales que har&aacute;n que los servicios no funcionen adecuadamente.</p>
+
+<h2><a name="t02seguridad" id="t02seguridad"></a>Pruebas de Seguridad</h2>
+
+<p>Las actividades que se pueden realizar para hacer las pruebas de seguridad son diversas y se orientan a varios &aacute;mbitos, como se describe a continuaci&oacute;n. Los temas a tratar son los siguientes:</p>
+
+<ul>
+<li>Manejo de <a class="glossaryTerm" href="../../glosario.htm#Dns001" title="Ver t&eacute;rmino en glosario.">DNS</a></li>
+
+<li>Protecci&oacute;n de Estructura Interna del Sitio Web</li>
+
+<li>Protecci&oacute;n contra Robots</li>
+
+<li>Manejo de Privacidad</li>
+
+<li>Canales Seguros</li>
+
+<li>Mecanismos de Control de Acceso</li>
+
+<li>Protecci&oacute;n de Programas</li>
+
+<li>Hosting vs. Sitio Propio</li>
+
+<li>Roles M&iacute;nimos a Asegurar</li>
+</ul>
+
+<p>A continuaci&oacute;n se entrega informaci&oacute;n para cada uno de ellos.</p>
+
+<h3><a name="t03dns" id="t03dns"></a>Manejo de DNS</h3>
+
+<p>Un aspecto que se debe cuidar es el de utilizar un nombre de dominio adecuado y relacionado con la identidad y misi&oacute;n de la instituci&oacute;n. No obstante, gracias a la forma de operaci&oacute;n del <strong>Domain Name Service</strong> (DNS o Servicio de Nombre de Dominio) es posible asignar m&aacute;s de un nombre de dominio a un mismo Sitio Web. De esta manera es posible incorporar otras denominaciones, bajo el dominio <strong>.CL</strong> u otro, que permitan generar <strong>alias</strong> adicionales para el sitio y as&iacute; permitir utilizar las denominaciones m&aacute;s coloquiales con la cual la instituci&oacute;n es conocida por los ciudadanos.</p>
+
+<p>No obstante, sin importar cu&aacute;ntos alias tenga un sitio, se recomienda que todos los dominios sean redirigidos para que la primera pantalla, en cualquier caso, corresponda a la portada <strong>oficial</strong> del Sitio Web.</p>
+
+<div class="stressed">
+<p>Recuerde que sobre los nombres de dominio existe una normativa obligatoria definida en el Oficio No. 485, del 10 de noviembre de 2000, en relaci&oacute;n con el Decreto Supremo No. 5996, donde se especifica claramente que los sitios del Estado deben registrar su dominio bajo la denominaci&oacute;n <strong>.GOB.CL</strong> y <strong>.GOV.CL</strong>. Adicionalmente pueden hacerlo bajo el dominio <strong>.CL</strong> en forma directa. Dicha operaci&oacute;n, en cuanto a procedimientos y alcance, est&aacute; definida en su totalidad en el sitio <a href="http://nic.gob.cl/" title="Sitio web del Sistema de Informaci&oacute;n de la jerarqu&iacute;a gov.cl y gob.cl.">http://nic.gob.cl</a> y mayores referencias se pueden encontrar en <a href="http://nic.gob.cl/reglinscr.html" title="Normativa sobre inscripci&oacute;n de sitios gubernamentales en dominios GOB.CL y GOV.CL.">http://nic.gob.cl/reglinscr.html</a>.</p>
+</div>
+
+<h3><a name="t03estructura" id="t03estructura"></a>Protecci&oacute;n de la Estructura Interna del Sitio Web</h3>
+
+<p>Uno de los mecanismos que permite proteger la estructura interna del sitio (especialmente para casos de intentos de ataques externos y/o intentos de violaci&oacute;n de confidencialidad), es disminuir la cantidad de informaci&oacute;n contenida en las <a class="glossaryTerm" href="../../glosario.htm#Url001" title="Ver t&eacute;rmino en glosario.">URL</a> que se muestran en el programa visualizador. Esto es importante respecto de directorios y nombres de programas, pero especialmente en lo que se refiere a la entrega de par&aacute;metros de sesi&oacute;n, datos de usuario u otro mecanismo de transferencia de informaci&oacute;n entre p&aacute;ginas y/o secciones de c&oacute;digo.</p>
+
+<p>Se recomienda que los mecanismos de traspaso de informaci&oacute;n entre p&aacute;ginas sea a nivel de objetos del servidor, asociados a la sesi&oacute;n, sin que la interacci&oacute;n con el lado cliente deba hacerse responsable de la transferencia de datos y/o informaci&oacute;n entre sesiones de ejecuci&oacute;n del servidor.</p>
+
+<p>De igual forma, se recomienda evitar que el acceso a elementos del servidor web est&eacute; asociado a <strong>direccionamientos relativos por sesi&oacute;n</strong> o asociados al <strong>UserId</strong> o <strong>SessionId</strong>; esto se debe a que mediante simples pasos se puede conocer <strong>token</strong> de sesi&oacute;n y gracias a eso simular que es el mismo usuario que regresa al sitio. Para evitar el problema se recomienda incorporar protecciones de direcci&oacute;n relativas a la <a class="glossaryTerm" href="../../glosario.htm#Ipa001" title="Ver t&eacute;rmino en glosario.">Direcci&oacute;n IP</a> de origen.</p>
+
+<p>Otro m&eacute;todo de protecci&oacute;n de estructura interna consiste en deshabilitar (excepto para casos excepcionales, como repositorios p&uacute;blicos de archivos) la navegaci&oacute;n sobre directorios mediante el servidor web. Esta protecci&oacute;n se hace para todos los directorios desde la configuraci&oacute;n del software del servidor web. Otra forma de hacerlo consiste en incorporar un archivo por omisi&oacute;n del servidor web en todos los directorios, aun cuando no sea directamente referenciado por otras p&aacute;ginas para que se muestre su contenido cuando un usuario intente revisar el contenido existente en el directorio. En el caso de habilitar la navegaci&oacute;n sobre directorios, se debe evitar el acceso a ciertos directorios protegidos.</p>
+
+<div class="stressed">
+<p>Junto con estas protecciones de lectura, se recomienda realizar peri&oacute;dicamente una revisi&oacute;n de los esquemas de permisos otorgados a directorios y archivos. Las permanentes actualizaciones del software de un servidor web, generalmente provocan un problema de control del acceso a nivel de archivos, lo cual requiere procedimientos claros de supervisi&oacute;n.</p>
+</div>
+
+<h3><a name="t03robots" id="t03robots"></a>Protecci&oacute;n Contra Robots</h3>
+
+<p>No todos los directorios del sitio deben estar disponibles para que los robots de b&uacute;squeda (conocidos m&aacute;s popularmente como <strong>ara&ntilde;as</strong> o <strong>spiders</strong> de los buscadores) entren en ellos. Para impedirlo, se debe utilizar el archivo <a class="glossaryTerm" href="../../glosario.htm#Rob001" title="Ver t&eacute;rmino en glosario.">robots.txt</a> o las instrucciones espec&iacute;ficas en los <code>meta-tags</code> de la p&aacute;gina de inicio, para impedir su ingreso.</p>
+
+<p>El archivo <strong>robots.txt</strong> es un archivo de texto plano (no de HTML) ubicado en directorios el servidor web que contiene instrucciones precisas respecto de qu&eacute; hacer en ellos. Cada vez que un robot visita un sitio, primero revisa si existe ese archivo.</p>
+
+<p>Si no lo encuentra, indexa la p&aacute;gina en el sistema buscador que lo haya enviado; si lo encuentra, analiza su contenido buscando la siguiente informaci&oacute;n:</p>
+
+<p class="code">User-agent: * disallow: /</p>
+
+<p>La primera l&iacute;nea <code>User-agent</code> indica que es v&aacute;lida para todos los robots que lleguen (porque tiene un asterisco; puede restringirse a un robot, indicando su nombre), mientras que la segunda indica con <code>disallow</code> que no est&aacute; permitido avanzar por los enlaces de la p&aacute;gina ya que <code>/</code> hace referencia a la ra&iacute;z del sitio.</p>
+
+<p>En otro caso, si se quiere evitar el acceso de todos los robots a un directorio determinado (por ejemplo <strong>cgi-bin</strong>, donde est&aacute;n los archivos m&aacute;s sensibles), se puede indicar esa informaci&oacute;n de la siguiente manera:</p>
+
+<p class="code">User-agent: * disallow: /cgi-bin/</p>
+
+<p>Adicionalmente se puede usar el commando <code>allow</code> que permite incluir directorios espec&iacute;ficos, gracias a lo cual ciertos contenidos s&iacute; son indexados. Por ejemplo:</p>
+
+<p class="code">User-agent: * disallow: /imagenes/ allow: /imagenes/logotipo-institucion.jpg</p>
+
+<p>En este caso la segunda l&iacute;nea indica con <code>disallow</code> que no est&aacute; permitido ingresar al directorio de <code>imagenes</code>, pero que s&iacute; se puede indexar un archivo espec&iacute;fico, que corresponde al Logotipo institucional.</p>
+
+<p>Otra forma de impedir el acceso de un robot es poniendo marcadores espec&iacute;ficos en los <code>meta-tags</code> de las p&aacute;ginas. No obstante, este mecanismo no es soportado por todos los robots, por lo que su alcance es m&aacute;s limitado.</p>
+
+<p>La forma precisa de incluir dicho <strong>meta-tag</strong> es la siguiente:</p>
+
+<p class="code">&lt;html&gt; &lt;head&gt; &lt;meta name="robots" content="noindex,nofollow"&gt; &lt;meta name="description" content="Este sitio...."&gt; &lt;title&gt;...&lt;/title&gt; &lt;/head&gt; &lt;body&gt;</p>
+
+<div class="supplement" id="suprobots">
+<p>M&aacute;s informaci&oacute;n en:</p>
+
+<ul>
+<li><a href="http://www.robotstxt.org/wc/robots.html" title="Informaci&oacute;n general sobre el est&aacute;ndar robots.txt.">http://www.robotstxt.org/wc/robots.html</a></li>
+
+<li><a href="http://www.robotstxt.org/wc/norobots.html" title="Est&aacute;ndar para la exclusi&oacute;n de Robots.">http://www.robotstxt.org/wc/norobots.html</a></li>
+</ul>
+</div>
+
+<p>Las cuatro posibles combinaciones de este <strong>meta-tag</strong> son las siguientes:</p>
+
+<dl>
+<dt><code>&lt;meta name="robots" content="index,follow"&gt;</code></dt>
+
+<dd>Indica que la p&aacute;gina puede ser indexada y sus enlaces seguidos</dd>
+
+<dt><code>&lt;meta name="robots" content="index,nofollow"&gt;</code></dt>
+
+<dd>Indica que la p&aacute;gina puede ser indexada, pero sus enlaces no pueden ser seguidos</dd>
+
+<dt><code>&lt;meta name="robots" content="noindex,follow"&gt;</code></dt>
+
+<dd>Indica que la p&aacute;gina no puede ser indexada, pero sus enlaces pueden ser seguidos</dd>
+
+<dt><code>&lt;meta name="robots" content="noindex,nofollow"&gt;</code></dt>
+
+<dd>Indica que la p&aacute;gina no puede ser indexada ni sus enlaces seguidos</dd>
+</dl>
+
+<h3><a name="t03privacidad" id="t03privacidad"></a>Manejo de Privacidad</h3>
+
+<p>Mantener la privacidad de los usuarios debe ser un objetivo permanente del sitio. Para ello se requiere de contar con una Pol&iacute;tica de Privacidad formal y expl&iacute;cita en el sitio y, adem&aacute;s, deben existir mecanismos de seguridad concretos para proteger los datos de sus usuarios.</p>
+
+<p>Entre estos, se debe contar con protecciones f&iacute;sicas y l&oacute;gicas sobre dicha informaci&oacute;n.</p>
+
+<p>En el caso de disponer de arquitecturas multicapas reales, se recomienda proteger la informaci&oacute;n de clientes en servidores f&iacute;sicos distintos de almacenamiento de datos, incluyendo interfaces idealmente separadas de consulta de datos. Adem&aacute;s, incorporar mecanismos de <a class="glossaryTerm" href="../../glosario.htm#Enc001" title="Ver t&eacute;rmino en glosario.">encriptaci&oacute;n</a> de los datos para informaci&oacute;n sensible.</p>
+
+<p>Se recomienda que la informaci&oacute;n, si es almacenada para efectos de que los usuarios la recuperen desde el Sitio Web, sea encriptada con claves administradas por ellos mismos (por ejemplo, su clave de <a class="glossaryTerm" href="../../glosario.htm#Aut001" title="Ver t&eacute;rmino en glosario.">autenticaci&oacute;n</a> frente al sitio).</p>
+
+<p>Una decisi&oacute;n de arquitectura que disminuye el riesgo de robo de informaci&oacute;n de clientes o cuentas de acceso, consiste en evitar que desde la Base de Datos sea posible generar parejas UserId/Clave que permitan autenticarse frente al sitio. La forma de hacerlo es incorporar mecanismos que almacenen un valor de &iacute;ndice de la clave en la Base de Datos, en vez de almacenar la clave propiamente tal. Gracias a esto, cuando un cliente se autentica frente al sitio, la comparaci&oacute;n de claves se realiza sobre los valores de &iacute;ndice y se evita conocer directamente esa informaci&oacute;n.</p>
+
+<p>Es importante destacar adem&aacute;s que un buen dise&ntilde;o de los mecanismos de autenticaci&oacute;n junto con mecanismos de auditor&iacute;a, almacenamiento y recuperaci&oacute;n posterior, son adecuados para la implementaci&oacute;n de la <strong>Firma Electr&oacute;nica Simple</strong>, requisito definido como suficiente para m&uacute;ltiples interacciones del Estado, de acuerdo con la <strong>Ley 19.799</strong> y su reglamento (analizar recomendaciones asociadas al <a class="file pdf" title="[PDF] Reglamento de Ley 19.799 sobre Documentos Electr&oacute;nicos." href="anexos/Reglamento_Ley19799_documento_electronico.pdf">Uso del Documento y Firma Electr&oacute;nica al interior del Sector P&uacute;blico</a> [127Kb]).</p>
+
+<p>Finalmente, se recomienda un control particular de todos los procesos de respaldo, recargas, manejo de medios removibles y generaci&oacute;n de copias de informaci&oacute;n, por ser mecanismos internos de fugas o compromiso de confidencialidad de la informaci&oacute;n.</p>
+
+<h3><a name="t03canalesseg" id="t03canalesseg"></a>Canales Seguros</h3>
+
+<p>Es importante incorporar mecanismos de encriptaci&oacute;n del canal de comunicaciones (como el protocolo <a class="glossaryTerm" href="../../glosario.htm#Ssl001" title="Ver t&eacute;rmino en glosario.">Secure Socket Layer</a> o <acronym title="Secure Socket Layer" lang="en">SSL</acronym>), para la transferencia de informaci&oacute;n privada entre los usuarios y el Sitio Web, a trav&eacute;s de la red Internet. Hacerlo no requiere de programaci&oacute;n adicional a las funcionalidades de interacci&oacute;n, y asegura la protecci&oacute;n de toda la informaci&oacute;n intercambiada entre el servidor y los usuarios.</p>
+
+<p>Desde un punto de vista de desempe&ntilde;o, si bien el inicio (<strong>hand shaking</strong>) del proceso de establecimiento del canal <strong>SSL</strong> puede significar un peque&ntilde;o retardo en la conexi&oacute;n inicial, posteriormente no provoca un aumento significativo del ancho de banda utilizado en la conexi&oacute;n, ni tampoco obliga a un aumento significativo de recursos del servidor.</p>
+
+<div class="stressed">
+<p>Es importante considerar que la seguridad asignada a un Sitio Web debe ser correspondiente con la inversi&oacute;n y la importancia de los datos almacenados, siendo estas capacidades obligatorias para el caso de los sitios transaccionales.</p>
+</div>
+
+<h3><a name="t03acceso" id="t03acceso"></a>Mecanismos de Control de Acceso</h3>
+
+<p>Otro aspecto que genera mejoras en la protecci&oacute;n de la privacidad de los usuarios y de la informaci&oacute;n contenida en el Sitio Web, es la incorporaci&oacute;n de mecanismos modernos de generaci&oacute;n de claves y autenticaci&oacute;n, como los que se plantean a continuaci&oacute;n.</p>
+
+<dl>
+<dt>Firma Electr&oacute;nica Simple y Avanzada:</dt>
+
+<dd>es un sistema que identifica al usuario cuando realiza tr&aacute;mites a trav&eacute;s de Internet o redes cerradas. Existe una ley y el correspondiente reglamento que la regula y empresas que las ofrecen en el mercado (m&aacute;s informaci&oacute;n en <a href="http://www.entidadacreditadora.cl/" title="Sitio web de la Entidad Acreditadora de Firma Electr&oacute;nica.">http://www.entidadacreditadora.cl</a>). Ambas firmas constituyen las bases legales para que ciudadanos y empresas puedan identificarse virtualmente y de esa manera enviar comunicaci&oacute;n y hacer negocios de manera m&aacute;s segura y confiable. Se trata de un mecanismo de complejidad media, aunque incluye funcionalidades de seguridad y criptograf&iacute;a. No obstante, la incorporaci&oacute;n de este mecanismo en forma &uacute;nica depender&aacute; del control absoluto que se tenga de la comunidad de usuarios de la soluci&oacute;n. Para comunidades abiertas es preferible establecer dos mecanismos de autenticaci&oacute;n: uno fuerte, mediante Firma Electr&oacute;nica (usando certificados digitales) y otro, mediante autenticaci&oacute;n de Usuario y Clave. Por otro lado, la Firma Electr&oacute;nica Simple podr&iacute;a ser usada para las comunicaciones oficiales enviadas por la instituci&oacute;n a sus usuarios. El uso de la Firma Electr&oacute;nica debe definirse al momento de determinar la arquitectura de soluci&oacute;n del Sitio Web.</dd>
+
+<dt>Autenticaci&oacute;n con par Usuario y Clave:</dt>
+
+<dd>si se emplea esta soluci&oacute;n, debe existir un procedimiento concreto para los casos en que un usuario pierda o no recuerde su clave. Se recomienda ofrecer mecanismos de <strong>regeneraci&oacute;n de clave</strong>, mediante la entrega de respuestas a preguntas predefinidas por los usuarios, en lugar de hacer el <strong>env&iacute;o de la clave por e-mail</strong> . En el caso de contar con mecanismos de Ayuda, se debe ofrecer apoyo para la regeneraci&oacute;n de las claves, sin que el personal de la instituci&oacute;n tenga acceso a la informaci&oacute;n de seguridad del cliente. Se debe evitar el uso de mecanismos de autenticaci&oacute;n administrados por terceros, en caso de que puedan comprometer la confidencialidad o la suplantaci&oacute;n del usuario.</dd>
+
+<dt>Sistemas de Hardware para Autentificaci&oacute;n:</dt>
+
+<dd>para sistemas de seguridad que requieren una autenticaci&oacute;n absoluta del usuario, es preferible considerar mecanismos de autenticaci&oacute;n fuerte. Para ello, se deben incorporar mecanismos que incluyan elementos de hardware que deben estar en posici&oacute;n del usuario, tales como tarjetas u otros similares (security token) que permiten el acceso a las &aacute;reas de autenticaci&oacute;n. All&iacute; el usuario debe ingresar su identificaci&oacute;n de Usuario (security challenge response) y se le genera una clave de sesi&oacute;n que al ser digitada en pantalla, le permite acceder al sistema. Dicha clave cambia frecuentemente para aumentar la seguridad de acceso.</dd>
+</dl>
+
+<h3><a name="t03protprog" id="t03protprog"></a>Protecci&oacute;n de Programas</h3>
+
+<p>Es fundamental proteger los c&oacute;digos y programas internos del servidor web, particularmente evitando la transferencia de par&aacute;metros o informaci&oacute;n a trav&eacute;s de la direcci&oacute;n de acceso a las p&aacute;ginas (por ejemplo, al usar el m&eacute;todo <code>GET</code> para la entrega de par&aacute;metros), los cuales son mecanismos frecuentes de <strong>hackeo</strong> o robo de informaci&oacute;n.</p>
+
+<p>De igual forma, se debe evitar la lectura de ejecutables desde los directorios del servidor, controlando los permisos adecuados de acceso a &eacute;stos, con el fin de evitar desensamblaje y/o ingenier&iacute;a reversa para analizar accesos internos.</p>
+
+<p>En cuanto a los <strong>scripts</strong> ubicados en el lado del cliente, en caso de ser cr&iacute;ticos, se recomienda utilizar compactadores de c&oacute;digo y eliminar documentaci&oacute;n de apoyo que permita su f&aacute;cil comprensi&oacute;n a partir de la lectura del c&oacute;digo.</p>
+
+<p>Es importante que estas medidas sean incluidas junto a las acciones de seguridad inform&aacute;tica normales de la instituci&oacute;n.</p>
+
+<h3><a name="t03hosting" id="t03hosting"></a>Hosting Externo vs. Sitio Propio</h3>
+
+<p>Sin entrar en profundidad en cuanto al detalle de los elementos a considerar para esta decisi&oacute;n, la principal recomendaci&oacute;n es hacer una evaluaci&oacute;n objetiva basada en los siguientes aspectos:</p>
+
+<ul>
+<li>Evaluar las reales capacidades disponibles para la operaci&oacute;n permanente del sitio, desde un punto de vista t&eacute;cnico.</li>
+
+<li>Evaluar los requerimientos de control y seguridad necesarios.</li>
+
+<li>Evaluar el nivel de soporte efectivo que el personal t&eacute;cnico del servicio puede realizar sobre los servidores.</li>
+</ul>
+
+<p>Con estos par&aacute;metros se debe definir la mejor opci&oacute;n, no s&oacute;lo desde el punto de vista del inter&eacute;s de las &aacute;reas t&eacute;cnicas, sino que mediante una evaluaci&oacute;n de impacto global de la decisi&oacute;n asociada.</p>
+
+<p>La amplia oferta disponible permite realizar combinaciones de servicios e infraestructura de muy diversos tipos, lo cual facilita configurar una soluci&oacute;n &oacute;ptima en t&eacute;rminos del costobeneficio asociado (por ejemplo, hosting compartido, dedicado, collocation, housing, red administrada, monitoreo de seguridad, administraci&oacute;n de seguridad perimetral, control de aplicaciones, fulfillment, etc.).</p>
+
+<p>En caso de que se decida externalizar esta &aacute;rea, es importante contar con altos est&aacute;ndares de parte del proveedor en todo lo referido a tiempo de desempe&ntilde;o (<strong>uptime</strong>), respaldos y recuperaci&oacute;n, actualizaciones de software, etc.</p>
+
+<h3><a name="t03roles" id="t03roles"></a>Roles M&iacute;nimos a Asegurar</h3>
+
+<p>Un &uacute;ltimo aspecto considerado en esta &aacute;rea de recomendaciones, consiste en definir los diversos roles profesionales dentro de la definici&oacute;n y dise&ntilde;o de un Sitio Web para una instituci&oacute;n.</p>
+
+<p>Desde un punto de vista exclusivamente t&eacute;cnico, es fundamental considerar al menos los siguientes roles, identificando tanto sus responsabilidades como el personal m&aacute;s competente que pueda cumplirlos.</p>
+
+<p>Si bien m&aacute;s de uno de estos roles funcionales puede ser desarrollado simult&aacute;neamente por una persona o &aacute;rea de la organizaci&oacute;n, es importante que dichas &aacute;reas sean cubiertas no s&oacute;lo durante la puesta en marcha de la soluci&oacute;n sino tambi&eacute;n durante su etapa de producci&oacute;n.</p>
+
+<dl>
+<dt>Arquitecto:</dt>
+
+<dd>encargado de hacer las configuraciones de trabajo de los servidores y aplicaciones.</dd>
+
+<dt>Administrador de Aplicaciones:</dt>
+
+<dd>encargado del funcionamiento del software operativo.</dd>
+
+<dt>Administrador de Control de Calidad:</dt>
+
+<dd>encargado del cumplimiento de las pol&iacute;ticas de calidad.</dd>
+
+<dt>Administrador de Seguridad:</dt>
+
+<dd>encargado de hacer generar y hacer cumplir las directivas de seguridad.</dd>
+
+<dt>Administrador de Operaciones:</dt>
+
+<dd>encargado de los aspectos operativos relacionados con el hardware.</dd>
+
+<dt>Administrador de Contenidos:</dt>
+
+<dd>encargado de las informaciones contenidas en el Sitio Web.</dd>
+
+<dt>Administrador de HelpDesk y Soporte:</dt>
+
+<dd>encargado de dar soporte a usuarios sobre las funcionalidades del Sitio Web.</dd>
+
+<dt>Administrador de Contingencias:</dt>
+
+<dd>encargado de enfrentar en primera l&iacute;nea los problemas que se generen en la operaci&oacute;n.</dd>
+
+<dt>Auditor / Contralor:</dt>
+
+<dd>encargado de llevar registro de las operaciones realizadas, con el fin de apoyar la revisi&oacute;n de procedimientos.</dd>
+</dl>
+
+<p>Finalmente, aunque los roles del &aacute;rea Inform&aacute;tica pueden estar muy claros, es necesario que se entienda que la operaci&oacute;n del Sitio Web es una tarea conjunta en la que participan funcionarios de diversas &aacute;reas de la instituci&oacute;n.</p>
+
+<h3><a name="t03respaldo" id="t03respaldo"></a>Pruebas de Respaldo y Recuperaci&oacute;n</h3>
+
+<div class="supplement">
+<p>M&aacute;s informaci&oacute;n en <a href="http://www.monografias.com/trabajos14/respaldoinfo/respaldoinfo.shtml" title="Pol&iacute;ticas de respaldo de informaci&oacute;n.">http://www.monografias.com/trabajos14/respaldoinfo/respaldoinfo.shtml</a></p>
+</div>
+
+<p>Respaldar la informaci&oacute;n de un Sitio Web se refiere a copiar el contenido completo del sistema (datos, programaci&oacute;n, im&aacute;genes, etc.) a un medio que sea confiable, que est&eacute; en un lugar seguro y que permita la recuperaci&oacute;n de manera r&aacute;pida y eficiente.</p>
+
+<p>En este sentido, hay que preocuparse no s&oacute;lo de probar la confiabilidad del sistema al momento de respaldar, sino tambi&eacute;n para la acci&oacute;n de recuperar y volver a instalar lo respaldado.</p>
+
+<h3><a name="t03regcontrol" id="t03regcontrol"></a>Registro y Control de Pruebas y Errores</h3>
+
+<p>Para que una prueba sea v&aacute;lida, debe ser lo m&aacute;s documentada posible, con el fin de que, quien deba efectuar la correcci&oacute;n, pueda replicar el error para analizarlo y luego proceder a tomar medidas correctivas. Para ello se recomienda llevar una planilla de c&aacute;lculo (bajar <a class="file xls" title="[Excel] Planilla de Control de Calidad de Software." href="anexos/Planilla_Revision_Sitios.xls">Planilla para Revisi&oacute;n de Sitios</a> [106Kb]) en que se vayan anotando por columna los siguientes datos:</p>
+
+<dl>
+<dt>Detecci&oacute;n del Error:</dt>
+
+<dd>para ser anotado por quien prueba. 
+<dl>
+<dt>M&oacute;dulo:</dt>
+
+<dd>indica la secci&oacute;n en la que se produce el error.</dd>
+
+<dt>URL:</dt>
+
+<dd>direcci&oacute;n de la p&aacute;gina donde ocurri&oacute; el error.</dd>
+
+<dt>Acci&oacute;n:</dt>
+
+<dd>Indicar la secuencia de pasos que sigui&oacute; para que ocurra el error.</dd>
+
+<dt>Lo que hace o dice:</dt>
+
+<dd>es la explicaci&oacute;n m&aacute;s detallada posible del error, en particular se&ntilde;alando la secuencia de pasos seguida hasta dar con el error.</dd>
+
+<dt>Lo que debe hacer o decir:</dt>
+
+<dd>se debe indicar lo que se espera que deber&iacute;a ocurrir cuando se hace la acci&oacute;n que se ha descrito.</dd>
+
+<dt>Encontrado por:</dt>
+
+<dd>nombre de quien prueba.</dd>
+
+<dt>Fecha:</dt>
+
+<dd>fecha en la que se hace la anotaci&oacute;n.</dd>
+
+<dt>Reproducible:</dt>
+
+<dd>indicar si el error se repite al hacer nuevamente la prueba.</dd>
+
+<dt>Clasificaci&oacute;n:</dt>
+
+<dd>permite definir el grado de complejidad del error, al se&ntilde;alar si afecta el funcionamiento del sitio (caso extremo) o s&oacute;lo su presentaci&oacute;n.</dd>
+</dl>
+</dd>
+
+<dt>Diagn&oacute;stico del Error:</dt>
+
+<dd>para ser anotado por quien corrige. 
+<dl>
+<dt>Causa:</dt>
+
+<dd>motivo por el cual se produce el error.</dd>
+
+<dt>Efectos laterales:</dt>
+
+<dd>indicar en qu&eacute; otros m&oacute;dulos la existencia de este error puede estar causando impacto negativo; muchas veces errores diversos tienen una causa com&uacute;n, por lo que al reparar &eacute;sta se arreglan los dem&aacute;s.</dd>
+</dl>
+</dd>
+
+<dt>Correcci&oacute;n del Error:</dt>
+
+<dd>para ser anotado por quien corrige. 
+<dl>
+<dt>Descripci&oacute;n:</dt>
+
+<dd>acci&oacute;n realizada para hacer la reparaci&oacute;n del error.</dd>
+
+<dt>Archivos intervenidos:</dt>
+
+<dd>archivos en los que se hicieron modificaciones o, al menos, el principal de ellos.</dd>
+
+<dt>Corregido por:</dt>
+
+<dd>persona que hizo la correcci&oacute;n.</dd>
+
+<dt>Fecha correcci&oacute;n:</dt>
+
+<dd>fecha en que qued&oacute; reparado el error.</dd>
+</dl>
+</dd>
+
+<dt>Comprobaci&oacute;n de la Correcci&oacute;n:</dt>
+
+<dd>para ser anotado por quien revisa la correcci&oacute;n realizada. 
+<dl>
+<dt>Revisor:</dt>
+
+<dd>Nombre de quien revisa si el error fue efectivamente reparado.</dd>
+
+<dt>Fecha:</dt>
+
+<dd>fecha en que se realiza la revisi&oacute;n.</dd>
+
+<dt>Reparado:</dt>
+
+<dd>indicar si est&aacute; reparado o no. Si no lo est&aacute;, se debe copiar la l&iacute;nea de error en blanco en una nueva planilla, con el fin de solicitar nuevamente el proceso de correcci&oacute;n.</dd>
+</dl>
+</dd>
+</dl>
+
+<div class="chapterNav">
+<ul>
+<li class="back"><a href="errores.htm" title="Ver p&aacute;gina anterior."><img src="../../../images/icn_chapnavprev.gif" alt="P&aacute;gina anterior." />anterior</a></li>
+
+<li class="index"><a href="index.htm" title="Ver portada de este cap&iacute;tulo."><img src="../../../images/icn_chapnavindex.gif" alt="Portada de cap&iacute;tulo." />portada cap&iacute;tulo</a></li>
+
+<li class="next"><a href="usuario.htm" title="Ver p&aacute;gina siguiente.">siguiente<img src="../../../images/icn_chapnavnext.gif" alt="P&aacute;gina siguiente." /></a></li>
+</ul>
+</div>
+
+ 
+</div>
+</div>
+
+<div id="footer">
+<div id="logos"><p><a title="Gobierno de Chile, Ministerio Secretar&iacute;a General de la Presidencia" href="http://www.minsegpres.gob.cl/"><img src="../../../images/pic.foot.logogob.gif" alt="Logo Gobierno de Chile, Ministerio Secretar&iacute;a General de la Presidencia" /></a><a title="Creative Commons: algunos derechos reservados" href="http://creativecommons.org/licenses/by-nc-sa/2.0/cl/"><img src="../../../guia-v2/images/88x31.png" alt="Imagen descriptiva de la Licencia Creative Commons" /></a></p></div>
+
+<ul id="footerMenu">
+<li><a href="../../../uso.htm" title="Condiciones de Uso de este sitio y de la Gu&iacute;a Web.">Condiciones de Uso</a></li>
+
+<li><a href="../../../equipo.htm" title="Colaboradores de este sitio y de la Gu&iacute;a Web.">Colaboradores</a></li>
+
+<li><a href="../../../estandares.htm" title="Est&aacute;ndares Web utilizados en este sitio.">Est&aacute;ndares</a></li>
+</ul>
+
+<div id="copyrights">
+<p>El texto y el material de este Sitio Web tienen algunos derechos reservados, de acuerdo a la <a title="Creative Commons: algunos derechos reservados" href="http://creativecommons.org/licenses/by-nc-sa/2.0/cl/">Licencia Creative Commons</a>.</p>
+
+<p>Gobierno de Chile</p>
+<p>Modernizaci&oacute;n y Gobierno Electr&oacute;nico, Ministerio Secretar&iacute;a General de la Presidencia</p>
+<p>Teatinos 333, piso 4 - Santiago de Chile. Tel&eacute;fono (+56 2) 688 77 01</p>
+</div>
+</div>
+<!---Este sitio usa estad&iacute;sticas de Google Analytics-->
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-3208644-1";
+urchinTracker();
+</script>
+<!---Fin Google Analytics-->
+</body>
+
+<!-- Mirrored from www.guiaweb.gob.cl/guia/capitulos/cuatro/queprobar.htm by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 29 Nov 2011 22:11:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>
+<script type='text/javascript' src="/guiaweb_old/mensaje_caducidad.js"></script>

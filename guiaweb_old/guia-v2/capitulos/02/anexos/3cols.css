@@ -1,0 +1,102 @@
+
+html {
+margin : 0;
+padding : 0;
+}
+body {
+font-family : "Trebuchet MS", Verdana, Lucida, Arial, Helvetica, sans-serif;
+font-size : 80%;
+background-color : #e1dfc8;
+}
+a {
+color : #228b22;
+}
+a:visited {
+color : #808000;
+}
+a:active {
+color : #ff0000;
+}
+a:hover {
+text-decoration : none;
+background-color : #fce08d;
+}
+p {
+text-align : justify;
+text-indent : 8px;
+}
+strong {
+font-weight : bold;
+}
+h1 {
+font-size : 2em;
+font-weight : bold;
+}
+h2 {
+font-size : 1.5em;
+font-weight : bold;
+}
+h3 {
+font-size : 1em;
+font-weight : bold;
+}
+#izq {
+position : absolute;
+top : 0;
+left : 0;
+margin : 20px;
+padding : 10px;
+border : 5px solid #804040;
+width : 150px;
+}
+html > body #izq {
+width : 150px;
+}
+#izq img {
+border : 0;
+vertical-align : middle;
+text-align : center;
+display : block;
+}
+#izq p {
+text-indent : 0;
+text-align : center;
+}
+#cen {
+position : relative;
+margin : 15px 220px 20px 220px;
+padding : 10px;
+border : 5px solid #d2691e;
+}
+#der {
+position : absolute;
+top : 0;
+right : 0;
+margin : 20px;
+padding : 10px;
+border : 5px solid #ffff9c;
+width : 150px;
+}
+html > body #der {
+width : 150px;
+}
+#der p {
+text-indent : 0;
+text-align : left;
+}
+#pie {
+position : fixed;
+bottom : 0;
+left : 0;
+width : 100%;
+height : 2em;
+background : #fe9;
+color : #666;
+border-top : 1px solid #666;
+clear : both;
+}
+#pie p {
+font-size : x-small;
+font-style : normal;
+text-align : center;
+}

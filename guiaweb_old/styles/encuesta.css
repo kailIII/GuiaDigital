@@ -1,0 +1,27 @@
+#encuesta {
+	border-color: #BABB18;
+	border-style: solid;
+	border-width: 1px 2px 2px 1px;
+	background: #ffff66 url(BackGraf.html) no-repeat left;
+	padding: 0 1em 1em 10em;
+	margin-bottom: 2em;
+}
+#encuesta h2{
+	margin-right: 10em;
+}
+#encuesta p{
+	margin-right: 12em;
+}
+.boton{
+	float: right;
+	background: #6C0;
+	border: 1px solid #690;
+	padding: .5em;
+	margin-right: -12em;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;}
+a.boton:hover{
+	background: #690;
+	text-decoration: none;
+	color: #000;}

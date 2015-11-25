@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+ 
+
+<!-- Mirrored from www.guiaweb.gob.cl/guia-v2/capitulos/02/css.htm by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 29 Nov 2011 22:09:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+ 
+<title>Gu&iacute;a Web 2.0 - Cap&iacute;tulo 2: Aplicaci&oacute;n de Est&aacute;ndares - Utilizaci&oacute;n de las Hojas de Estilo (CSS)</title>
+ 
+<!-- METADATA -->
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><!-- INICIO DUBLIN CORE META DATA -->
+<!-- http://dublincore.org/ -->
+<meta name="DC.Title" content="Guia para el Desarrollo de Sitios Web - Gobierno de Chile" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#title" />
+<meta name="DC.Creator.CorporateName" content="Secretar&iacute;a Ejecutiva Estrategia Digital" />
+<meta name="DC.Creator.CorporateName.Address" content="guiaweb@minsegpres.gob.cl" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#creator" />
+<meta name="DC.Subject" content="Desarrollo Sitios Web" />
+<meta name="DC.Subject" content="Gobierno de Chile" />
+<meta name="DC.Subject" content="Usabilidad Sitios Web" />
+<meta name="DC.Subject" content="Accesibilidad Sitios Web" />
+<meta name="DC.Subject" content="Experiencia de Usuario" />
+<meta name="DC.Subject" content="Dise&ntilde;o de interfaces" />
+<meta name="DC.Subject" content="Gobierno Electr&oacute;nico" />
+<meta name="DC.Subject" content="Accesibilidad Sitios Web" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#subject" />
+<meta name="DC.Description" content="Esta Guia establece estandares para el desarrollo de Sitios Web orientados a los usuarios de las instituciones del Gobierno de Chile" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#description" />
+<meta name="DC.Publisher" content="Ministerio de Econom&iacute;a" />
+<meta name="DC.Publisher.Address" content="guiaweb@minsegpres.gob.cl" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#publisher" />
+<meta name="DC.Contributor" content="Paulo Saavedra" />
+<meta name="DC.Contributor" content="Nelson Rodr&iacute;guez-Pe&ntilde;a" />
+<meta name="DC.Contributor" content="Juan C. Camus" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#contributor" />
+<meta name="DC.Date" scheme="scheme" content="2003-12-31" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#date" />
+<meta name="DC.Type" content="Text.Homepage" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#type" />
+<meta name="DC.Format" scheme="scheme" content="text/html" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#format" />
+<link rel="SCHEMA.imt" href="http://sunsite.auc.dk/RFC/rfc/rfc2046.html" />
+<meta name="DC.Identifier" content="../../../index.html" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#identifier" />
+<meta name="DC.Language" scheme="scheme" content="es" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#language" />
+<meta name="DC.Rights" scheme="scheme" content="../../../copyright.html" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#rights" />
+<meta name="DC.Date.X-MetadataLastModified" scheme="scheme" content="2003-12-24" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#date" /><!-- FIN DUBLIN CORE META DATA -->
+<!-- METADATA COMUN -->
+ 
+ 
+<!-- CSS -->
+<link href="../../../styles/main_v2.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/print_v2.css" rel="stylesheet" type="text/css" media="print" /> 
+ 
+<!-- SCRIPTS -->
+
+<script type="text/javascript" src="../../../scripts/uifunctions.js">
+</script> 
+ 
+  
+<link rel="shortcut icon" href="../../../favicon.ico" /> 
+</head>
+<body>
+<div id="pageHeader"><a name="top" id="top"></a> 
+<div id="corpLogo">
+<div id="printLogo"><img src="../../images/hd.logo.print.jpg" alt="Logo." /> 
+<p>Gu&iacute;a para el Desarrollo de Sitios Web - Gobierno de Chile</p>
+</div>
+
+<div id="screenLogo"><img src="../../images/hd.logo.jpg" alt="Logo." /></div>
+</div>
+
+<div id="uiMainMenu">
+<ul>
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../../index.htm" title="Ir a la P&aacute;gina principal.">Portada</a></li>
+
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../../guia/index.htm" title="Ir a la Gu&iacute;a Versi&oacute;n 1.0 por Cap&iacute;tulos">Gu&iacute;a Web V 1.0</a></li>
+
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../index.htm" title="Ir a la Gu&iacute;a Versi&oacute;n 2.0 por Cap&iacute;tulos">Gu&iacute;a Web V 2.0</a></li>
+
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../../recursos/index.htm" title="Ir a la secci&oacute;n de Recursos">Recursos</a></li>
+
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../glosario.htm" title="Ir al Glosario de t&eacute;rminos.">Glosario</a></li>
+
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../../quienes.htm" title="Ir a la secci&oacute;n Qui&eacute;nes Somos">Qui&eacute;nes Somos</a></li>
+</ul>
+</div>
+
+<div id="gwConcept"><img src="../../images/hd.pic.new.jpg" alt="Gu&iacute;a para el Desarrollo de Sitios Web - Gobierno de Chile." /></div>
+
+<div id="uiToolsMenu">
+<ul>
+<li><a class="actionLink" href="../../../mapa.htm" title="Mapa de contenidos del sitio."><img class="actionIcon" src="../../../images/icn_tool_map.gif" alt="Mapa de contenidos del sitio." /><span class="actionLabel">Mapa</span></a></li>
+
+<li><a class="actionLink" href="../../../contacto.html" title="Informaci&oacute;n de contacto."><img class="actionIcon" src="../../../images/icn_tool_contact.gif" alt="Informaci&oacute;n de contacto." /><span class="actionLabel">Contacto</span></a></li>
+
+<li><a class="actionLink" href="../../../recomendar.html" title="Recomendar este sitio a un amigo."><img class="actionIcon" src="../../../images/icn_tool_tellafriend.gif" alt="Recomendar este sitio a un amigo." /><span class="actionLabel">Recomendar</span></a></li>
+</ul>
+</div>
+</div>
+
+<div id="container" class="intStandard">
+<div id="uiSectionMenu"> 
+<ul class="menuGuia">
+<li class="mgItem00"><a href="../../index.htm" title="Ver Gu&iacute;a Web - Presentaci&oacute;n">Gu&iacute;a Web</a></li>
+
+<li class="mgItem0"><a href="../00/index.htm" title="Ir al Cap&iacute;tulo de Introducci&oacute;n">Introducci&oacute;n</a></li>
+
+<li class="mgItem1"><a href="../01/index.htm" title="Ir al Cap&iacute;tulo de Normativa">Normativa</a></li>
+
+<li class="mgItem2"><a href="index.htm" title="Ir al Cap&iacute;tulo de Est&aacute;ndares">Est&aacute;ndares</a></li>
+
+<li class="mgItem3"><a href="../03/index.htm" title="Ir al Cap&iacute;tulo de Dise&ntilde;o Web">Dise&ntilde;o Web</a></li>
+
+<li class="mgItem4"><a href="../04/index.htm" title="Ir al Cap&iacute;tulo de Encontrabilidad">Encontrabilidad</a></li>
+
+<li class="mgItem5"><a href="../05/index.htm" title="Ir al Cap&iacute;tulo de Usabilidad">Usabilidad</a></li>
+
+<li class="mgItem6"><a href="../../archivos/index.htm" title="Ir a la secci&oacute;n de Archivos para Descarga">Archivos para Bajar</a></li>
+</ul>
+
+  
+</div>
+
+<ul class="breadCrumbs">
+<li class="label">Usted est&aacute; en:</li>
+
+<li class="first"><a href="../../../index.htm" title="Portada del sitio.">Portada</a></li>
+
+ 
+<li><a href="../../index.htm" title="Portada de la Versi&oacute;n 2.0">Gu&iacute;a Web Versi&oacute;n 2.0</a></li>
+
+<li><a href="index.htm" title="Portada del Cap&iacute;tulo 2">Cap&iacute;tulo 2</a></li>
+
+ 
+</ul>
+
+<div id="content"> 
+<h1>Cap&iacute;tulo 2: Aplicaci&oacute;n de Est&aacute;ndares</h1>
+
+<div class="uiPageContents">
+<h2><span class="text">En esta P&aacute;gina</span></h2>
+
+<div>
+<ul>
+<li><a href="#intro">Utilizaci&oacute;n de las Hojas de Estilo (CSS)</a></li>
+<li><a href="#archivo">Archivo de Contenido</a>
+<li><a href="#estilo">Hojas de estilo</a>
+<li><a href="#recursos">Recursos Adicionales</a>
+</ul>
+</div>
+</div>
+
+<a name="intro" id="intro"></a><h3>Utilizaci&oacute;n de las Hojas de Estilo (CSS)</h3>
+
+<p>Como se puede apreciar por el ejemplo anterior, cuando se logra separar el contenido de la presentaci&oacute;n, el resultado suele ser muy poderoso ya que permite al administrador del Sitio Web hacer cambios al dise&ntilde;o (colores, ubicaciones, tama&ntilde;os) del contenido de sus p&aacute;ginas con muy poco esfuerzo: basta con modificar la Hoja de Estilos para que &eacute;stos tengan efecto.</p>
+
+<p>Para utilizar de mejor forma las Hojas de Estilo en Cascada, se ofrecen tres archivos que se pueden obtener desde la <strong>secci&oacute;n Anexo</strong> de este Cap&iacute;tulo y que son los siguientes:</p>
+
+
+<a name="archivo" id="archivo"></a><h4>Archivo de Contenido</h4>
+
+<p>Se trata del archivo <a href="anexos/3cols.htm">3cols.htm</a> que consiste en una p&aacute;gina con tres columnas: una tiene un logotipo y las otras dos, texto simulado; en su c&oacute;digo se puede ver que s&oacute;lo tiene etiquetas de html est&aacute;ndar, por lo que esta p&aacute;gina hace un uso v&aacute;lido de los est&aacute;ndares (ver Figura 3).</p>
+
+<div class="imgSet" id="fig003"><img src="images/fig.003.jpg" alt="Imagen que muestra la p&aacute;gina de ejemplo de la que trata esta secci&oacute;n." title="Imagen que muestra la p&aacute;gina de ejemplo de la que trata esta secci&oacute;n." longdesc="images/fig.003.htm" width="500" /> 
+<p class="caption"><a href="images/fig.003.htm" title="Descripci&oacute;n de imagen.">[D]</a> Figura 3. &ntilde; La imagen muestra una pantalla con el ejemplo del que trata esta secci&oacute;n.</p>
+</div>
+
+<a name="estilo" id="estilo"></a><h4>Hojas de estilo</h4>
+
+<p>Se ofrecen dos para este archivo, las cuales se llaman desde la secci&oacute;n &lt;head&gt; de su c&oacute;digo; una de ellas es para mostrar el contenido en pantalla, mientras que la segunda es para impresi&oacute;n. Los archivos se denominan <a href="anexos/3cols.css">3cols.css</a> y <a href="anexos/3cols-print.css">3cols-print.css</a>. Un elemento interesante, es que al usar la hoja de estilo de impresi&oacute;n, se modifica completamente el contenido y la p&aacute;gina se diagrama de manera diferente (ver Figura 4).</p>
+
+<div class="imgSet" id="fig003"><img src="images/fig.004.jpg" alt="Imagen que muestra el contenido de la p&aacute;gina web de ejemplo, cuando se aprecia en la visualizaci&oacute;n para impresi&oacute;n." title="magen que muestra el contenido de la p&aacute;gina web de ejemplo, cuando se aprecia en la visualizaci&oacute;n para impresi&oacute;n." longdesc="images/fig.004.htm" width="500" /> 
+<p class="caption"><a href="images/fig.003.htm" title="Descripci&oacute;n de imagen.">[D]</a> Figura 4. &ntilde; La imagen muestra la visualizaci&oacute;n para impresi&oacute;n de la p&aacute;gina web de ejemplo.</p>
+</div> 
+
+<p>La intenci&oacute;n de entregar estos archivos es que el usuario de la Gu&iacute;a pueda trabajar con ellos y hacerles las modificaciones que estime adecuadas, para ir aprendiendo sobre la marcha el efecto que consigue a trav&eacute;s de los cambios que realice.</p>
+
+<a name="recursos" id="recursos"></a><h4>Recursos Adicionales</h4>
+
+<p>Para aprender y practicar m&aacute;s sobre este tema, de por s&iacute; complejo, se sugieren los siguientes recursos:</p>
+
+<ul>
+<li><strong>Tutorial de CSS en W3C</strong> - <a href="http://www.w3.org/Style/Examples/011/firstcss.es.html" title="Tutorial CSS en W3C">http://www.w3.org/Style/Examples/011/firstcss.es.html</a></li>
+<li><strong>Tejedores del Web</strong> - <a href="http://www.tejedoresdelweb.com/307/article-1061.html" title="">http://www.tejedoresdelweb.com/307/article-1061.html</a></li>
+<li><strong>Directorio de enlaces de CSS en W3C</strong> - <a href="http://www.w3.org/Style/CSS/learning" title="Directorio de enlaces de CSS en W3C" hreflang="en">http://www.w3.org/Style/CSS/learning</a></li>
+</ul>
+
+
+
+<div class="chapterNav">
+<ul>
+<li class="back"><a href="puestamarcha.htm" title="Acceso a la Secci&oacute;n Puesta en Marcha del Cap&iacute;tulo 2"><img src="../../../images/icn_chapnavprev.gif" alt="P&aacute;gina anterior." />anterior</a></li>
+
+<li class="index"><a href="index.htm" title="Ver portada de este cap&iacute;tulo."><img src="../../../images/icn_chapnavindex.gif" alt="Portada de cap&iacute;tulo." />portada cap&iacute;tulo</a></li>
+
+<li class="next"><a href="premio.htm" title="Acceso a la secci&oacute;n Premio Web y Est&aacute;ndares del Cap&iacute;tulo 2">siguiente<img src="../../../images/icn_chapnavnext.gif" alt="P&aacute;gina siguiente." /></a></li>
+</ul>
+</div>
+
+ 
+</div>
+</div>
+
+<div id="footer">
+<div id="logos"><p><a title="Gobierno de Chile, Ministerio de Econom&iacute;a" href="http://www.economia.gob.cl/"><img src="../../images/pic.foot.logogob.gif" alt="Logo Gobierno de Chile, Ministerio de Econom&iacute;a." /></a><a title="Gobierno de Chile, Ministerio de Econom&iacute;a - Estrategia Digital" href="http://www.estrategiadigital.gob.cl/"><img src="../../../images/pic.foot.estrategiadigital.gif" alt="Gobierno de Chile, Ministerio de Econom&iacute;a - Estrategia Digital." /></a><a title="Creative Commons: algunos derechos reservados" href="http://creativecommons.org/licenses/by-nc-sa/2.0/cl/"><img src="../../images/88x31.png" alt="Imagen descriptiva de la Licencia Creative Commons" /></a></p></div>
+
+<ul id="footerMenu">
+<li><a href="../../../uso.htm" title="Condiciones de Uso de este sitio y de la Gu&iacute;a Web.">Condiciones de Uso</a></li>
+
+<li><a href="../../../equipo.htm" title="Colaboradores de este sitio y de la Gu&iacute;a Web.">Colaboradores</a></li>
+
+<li><a href="../../../estandares.htm" title="Est&aacute;ndares Web utilizados en este sitio.">Est&aacute;ndares</a></li>
+</ul>
+
+<div id="copyrights">
+<p>El texto y el material de este Sitio Web tienen algunos derechos reservados, de acuerdo a la <a title="Creative Commons: algunos derechos reservados" href="http://creativecommons.org/licenses/by-nc-sa/2.0/cl/">Licencia Creative Commons</a>.</p>
+
+<p>Gobierno de Chile, 2008.</p>
+</div>
+</div>
+<!---Este sitio usa estad&iacute;sticas de Google Analytics-->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-3208644-1";
+urchinTracker();
+</script>
+<!---Fin Google Analytics-->
+</body>
+
+<!-- Mirrored from www.guiaweb.gob.cl/guia-v2/capitulos/02/css.htm by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 29 Nov 2011 22:09:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>
+
+<script type='text/javascript' src="/guiaweb_old/mensaje_caducidad.js"></script>

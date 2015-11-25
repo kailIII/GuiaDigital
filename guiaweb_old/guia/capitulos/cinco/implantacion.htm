@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+ 
+
+<!-- Mirrored from www.guiaweb.gob.cl/guia/capitulos/cinco/implantacion.htm by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 29 Nov 2011 22:11:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+ 
+<title>Gu&iacute;a Web 1.0 - Metodolog&iacute;a de Implantaci&oacute;n de Mejoras</title>
+ 
+<!-- METADATA -->
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><!-- INICIO DUBLIN CORE META DATA -->
+<!-- http://dublincore.org/ -->
+<meta name="DC.Title" content="Guia para el Desarrollo de Sitios Web - Gobierno de Chile" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#title" />
+<meta name="DC.Creator.CorporateName" content="Modernizaci&oacute;n y Gobierno Electr&oacute;nico" />
+<meta name="DC.Creator.CorporateName.Address" content="guiaweb@minsegpres.gob.cl" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#creator" />
+<meta name="DC.Subject" content="Desarrollo Sitios Web" />
+<meta name="DC.Subject" content="Gobierno de Chile" />
+<meta name="DC.Subject" content="Usabilidad Sitios Web" />
+<meta name="DC.Subject" content="Accesibilidad Sitios Web" />
+<meta name="DC.Subject" content="Experiencia de Usuario" />
+<meta name="DC.Subject" content="Dise&ntilde;o de interfaces" />
+<meta name="DC.Subject" content="Gobierno Electr&oacute;nico" />
+<meta name="DC.Subject" content="Accesibilidad Sitios Web" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#subject" />
+<meta name="DC.Description" content="Esta Guia establece estandares para el desarrollo de Sitios Web orientados a los usuarios de las instituciones del Gobierno de Chile" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#description" />
+<meta name="DC.Publisher" content="Ministerio Secretar&iacute;a General de la Presidencia" />
+<meta name="DC.Publisher.Address" content="guiaweb@minsegpres.gob.cl" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#publisher" />
+<meta name="DC.Contributor" content="Paulo Saavedra" />
+<meta name="DC.Contributor" content="Nelson Rodr&iacute;guez-Pe&ntilde;a" />
+<meta name="DC.Contributor" content="Juan C. Camus" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#contributor" />
+<meta name="DC.Date" scheme="scheme" content="2003-12-31" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#date" />
+<meta name="DC.Type" content="Text.Homepage" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#type" />
+<meta name="DC.Format" scheme="scheme" content="text/html" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#format" />
+<link rel="SCHEMA.imt" href="http://sunsite.auc.dk/RFC/rfc/rfc2046.html" />
+<meta name="DC.Identifier" content="../../../index.html" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#identifier" />
+<meta name="DC.Language" scheme="scheme" content="es" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#language" />
+<meta name="DC.Rights" scheme="scheme" content="../../../copyright.html" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#rights" />
+<meta name="DC.Date.X-MetadataLastModified" scheme="scheme" content="2003-12-24" />
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements#date" /><!-- FIN DUBLIN CORE META DATA -->
+<!-- METADATA COMUN -->
+ 
+ 
+<!-- CSS -->
+<link href="../../../styles/main.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/print.css" rel="stylesheet" type="text/css" media="print" /> 
+ 
+<!-- SCRIPTS -->
+
+<script type="text/javascript" src="../../../scripts/uifunctions.js">
+</script> 
+ 
+  
+<link rel="shortcut icon" href="../../../favicon.ico" /> 
+</head>
+<body>
+<div id="pageHeader"><a name="top" id="top"></a> 
+<div id="corpLogo">
+<div id="printLogo"><img src="../../../images/hd.logo.print.jpg" alt="Logo." /> 
+<p>Gu&iacute;a para el Desarrollo de Sitios Web - Gobierno de Chile</p>
+</div>
+
+<div id="screenLogo"><img src="../../../images/hd.logo.jpg" alt="Logo." /></div>
+</div>
+
+<div id="uiMainMenu">
+<ul>
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../../index.htm" title="P&aacute;gina principal.">Portada</a></li>
+
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../index.htm" title="Gu&iacute;a para el desarrollo de Sitios Web versi&oacute;n 1.0 - Gobierno de Chile.">Gu&iacute;a Web V 1.0</a></li>
+
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../../guia-v2/index.htm" title="Gu&iacute;a para el desarrollo de Sitios Web versi&oacute;n 2.0 - Gobierno de Chile.">Gu&iacute;a Web V 2.0</a></li>
+
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../../recursos/index.htm" title="">Recursos</a></li>
+
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../glosario.htm" title="Glosario de t&eacute;rminos.">Glosario</a></li>
+
+<li onmouseover="enterMenuItem(this);" onmouseout="leaveMenuItem(this);"><a href="../../../quienes.htm" title="">Qui&eacute;nes Somos</a></li>
+</ul>
+</div>
+
+<div id="gwConcept"><img src="../../../images/hd.pic.new.jpg" alt="Gu&iacute;a para el Desarrollo de Sitios Web - Gobierno de Chile." /></div>
+
+<div id="uiToolsMenu">
+<ul>
+<li><a class="actionLink" href="../../../mapa.htm" title="Mapa de contenidos del sitio."><img class="actionIcon" src="../../../images/icn_tool_map.gif" alt="Mapa de contenidos del sitio." /><span class="actionLabel">Mapa</span></a></li>
+
+<li><a class="actionLink" href="../../../contacto.html" title="Informaci&oacute;n de contacto."><img class="actionIcon" src="../../../images/icn_tool_contact.gif" alt="Informaci&oacute;n de contacto." /><span class="actionLabel">Contacto</span></a></li>
+
+<li><a class="actionLink" href="../../../recomendar.html" title="Recomendar este sitio a un amigo."><img class="actionIcon" src="../../../images/icn_tool_tellafriend.gif" alt="Recomendar este sitio a un amigo." /><span class="actionLabel">Recomendar</span></a></li>
+</ul>
+</div>
+</div>
+
+<div id="container" class="intStandard">
+<div id="uiSectionMenu"> 
+<ul class="menuGuia">
+<li class="mgItem0"><a href="../../index.htm" title="Ir a Gu&iacute;a Web">Gu&iacute;a Web</a></li>
+
+<li class="mgItem1"><a href="../uno/index.htm" title="Ir a Planificaci&oacute;n Inicial de un Sitio Web">Planificaci&oacute;n Inicial de un Sitio Web</a></li>
+
+<li class="mgItem2"><a href="../dos/index.htm" title="Ir a Definici&oacute;n del Sitio Web">Definici&oacute;n del Sitio Web</a></li>
+
+<li class="mgItem3"><a href="../tres/index.htm" title="Ir a Dise&ntilde;o Web y Est&aacute;ndares">Dise&ntilde;o Web y Est&aacute;ndares</a></li>
+
+<li class="mgItem4"><a href="../cuatro/index.htm" title="Ir a Puesta en Marcha del Sitio Web">Puesta en Marcha del Sitio Web</a></li>
+
+<li class="mgItem5"><a href="index.htm" title="Ir a Plan de Mantenci&oacute;n del Sitio Web">Plan de Mantenci&oacute;n del Sitio Web</a></li>
+
+<li class="mgItem6"><a href="../../archivos/index.htm" title="ir a Descarga de Archivos">Descarga de Archivos</a></li>
+
+<li class="mgItem7"><a href="../../checklists/index.htm" title="Ver Pautas de control para la Gu&iacute;a Web.">Checklists</a></li>
+</ul>
+
+  
+</div>
+
+<ul class="breadCrumbs">
+<li class="label">Usted est&aacute; en:</li>
+
+<li class="first"><a href="../../../index.htm" title="Portada del sitio.">Portada</a></li>
+
+ 
+<li><a href="../../index.htm" title="">Gu&iacute;a Web</a></li>
+
+<li><a href="index.htm" title="">Cap&iacute;tulo V</a></li>
+
+ 
+</ul>
+
+<div id="content"> 
+<h1><a name="t01implantacion" id="t01implantacion"></a>Metodolog&iacute;a de Implantaci&oacute;n de Mejoras</h1>
+
+<div class="uiPageContents">
+<h2><span class="text">En esta P&aacute;gina</span></h2>
+
+<div>
+<ul>
+<li><a href="#t01implantacion">Metodolog&iacute;a de Implantaci&oacute;n de Mejoras</a> 
+<ul>
+<li><a href="#t02mantencion">Mantenci&oacute;n de Contenidos</a> 
+<ul>
+<li><a href="#t03frecuencia">Frecuencia de Actualizaci&oacute;n</a></li>
+
+<li><a href="#t03metodo">Metodolog&iacute;a de Mantenci&oacute;n</a> 
+<ul>
+<li><a href="#t04escritos">Contenidos Escritos</a></li>
+
+<li><a href="#t04multimedia">Contenidos Multimediales</a></li>
+
+<li><a href="#t04graficos">Contenidos Gr&aacute;ficos</a></li>
+</ul>
+</li>
+
+<li><a href="#t03funcion">Mantenci&oacute;n de Funcionalidades</a> 
+<ul>
+<li><a href="#t04preventiva">Mantenci&oacute;n Preventiva</a></li>
+
+<li><a href="#t04correctiva">Mantenci&oacute;n Correctiva</a></li>
+
+<li><a href="#t04usuarios">Los Usuarios Durante la Mantenci&oacute;n</a></li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li><a href="#t03monitor">Monitoreo de Actividades</a> 
+<ul>
+<li><a href="#t04usuarios">Estad&iacute;sticas de Tr&aacute;fico</a></li>
+
+<li><a href="#t04habitos">H&aacute;bitos de Uso</a></li>
+
+<li><a href="#t04mining">Webmining</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<p>Para que un proyecto Web funcione adecuadamente, se debe considerar el tipo de contenidos que se estar&aacute;n ingresando en sus p&aacute;ginas, cuando &eacute;ste se encuentre en pleno funcionamiento.</p>
+
+<p>Para ello, se recomienda indicar cu&aacute;les son las &aacute;reas que deben ser atendidas, con el fin de que se eval&uacute;e la forma de resolver las necesidades que se van a plantear en cada una de ellas, a medida que el sitio vaya creciendo.</p>
+
+<p>Tambi&eacute;n, es importante considerar la plataforma tecnol&oacute;gica a utilizar para los contenidos y funcionalidades que se incluir&aacute;n el Sitio Web y, con ello, determinar las necesidades que se abrir&aacute;n en esta &aacute;rea.</p>
+
+<p>Aquellas en que se requerir&aacute; una atenci&oacute;n permanente, son las siguientes:</p>
+
+<ul>
+<li>Mantenci&oacute;n de Contenidos</li>
+
+<li>Mantenci&oacute;n de Funcionalidades</li>
+</ul>
+
+<h2><a name="t02mantencion" id="t02mantencion"></a>Mantenci&oacute;n de Contenidos</h2>
+
+<p>Respecto de la mantenci&oacute;n de contenidos, lo primero que se debe asumir al iniciar el trabajo de mantener un Sitio Web, es que el contenido puede adoptar muchas formas y debido a las caracter&iacute;sticas de la plataforma web de Internet, es posible utilizar diferentes formatos del mismo.</p>
+
+<p>Por ello, se trata de un trabajo que tiene elementos bien conocidos como la generaci&oacute;n de nuevos contenidos y otros m&aacute;s tecnol&oacute;gicos y espec&iacute;ficos, como son los de adecuar esos contenidos a ciertos formatos, con el fin de cumplir con los est&aacute;ndares de transmisi&oacute;n de datos por Internet.</p>
+
+<p>De all&iacute; que en este cap&iacute;tulo de la Gu&iacute;a se entregue sobre ambas &aacute;reas, con el fin de que los encargados de un Sitio Web vean el rango completo de responsabilidades a las que deben enfrentarse.</p>
+
+<h3><a name="t03frecuencia" id="t03frecuencia"></a>Frecuencia de Actualizaci&oacute;n</h3>
+
+<p>Un tema que suele ser dejado de lado pero que es central, es la frecuencia con la que se actualizar&aacute;n los contenidos de un Sitio Web.</p>
+
+<div class="stressed">
+<p>El primer elemento que se debe tener en cuenta, es que por tratarse de una herramienta de comunicaci&oacute;n, el Sitio Web requiere de una actualizaci&oacute;n permanente, con el fin de dar cuenta a sus usuarios de que siempre hay informaci&oacute;n de inter&eacute;s en el sitio, gracias a lo cual gana en credibilidad.</p>
+</div>
+
+<p>La frecuencia de actualizaci&oacute;n m&aacute;s adecuada consiste en ingresar al menos un par de contenidos semanales en el sitio (si no es posible hacerlo con una frecuencia mayor), destac&aacute;ndolos en la portada con su correspondiente fecha, a fin de que los usuarios puedan distinguirlos de los contenidos m&aacute;s permanentes o anteriores.</p>
+
+<p>Adicionalmente, es importante considerar que el sitio debe ser una herramienta comunicativa de la instituci&oacute;n a la que pertenece y por ello, debe seguir sus orientaciones estrat&eacute;gicas y program&aacute;ticas. Por lo anterior, a trav&eacute;s del Sitio Web se debe ir incorporando todo aquello que est&eacute; en sinton&iacute;a con lo que el servicio est&eacute; realizando. En este sentido, buenas pr&aacute;cticas en contenidos se refieren a conseguir que el sitio incorpore informaci&oacute;n adecuada que permita a los usuarios conocer de la actividad de la instituci&oacute;n.</p>
+
+<p>Dadas estas caracter&iacute;sticas, los temas de mantenci&oacute;n de contenidos normalmente deber&iacute;an recaer sobre el &aacute;rea de Comunicaciones (o similar) de la instituci&oacute;n, o del contratista que d&eacute; ese servicio para dicha &aacute;rea.</p>
+
+<h3><a name="t03metodo" id="t03metodo"></a>Metodolog&iacute;a de Mantenci&oacute;n</h3>
+
+<p>Respecto de la metodolog&iacute;a para hacer la adecuada mantenci&oacute;n de los contenidos, a continuaci&oacute;n se entregar&aacute; informaci&oacute;n detalla por cada una de &eacute;stos.</p>
+
+<h4><a name="t04escritos" id="t04escritos"></a>Contenidos Escritos</h4>
+
+<p>Se refiere a todos los documentos escritos a trav&eacute;s de los cuales se puede entregar informaci&oacute;n al p&uacute;blico interesado en la instituci&oacute;n. Los contenidos que se consideran en este aspecto pueden ser los que se ingresan en una p&aacute;gina web o los que se incluyen en diferentes tipos de documentos. Dentro de estos contenidos destacan por su importancia, aunque no son excluyentes de otros, los siguientes:</p>
+
+<dl>
+<dt>Noticias:</dt>
+
+<dd>permiten dar a conocer las novedades o cualquier evento que sea de inter&eacute;s p&uacute;blico o que afecte a los usuarios, explicando sus efectos y alcances en forma m&aacute;s detallada de lo que podr&iacute;an hacer los medios de comunicaci&oacute;n. Por ejemplo, si en los medios se publica el llamado a un concurso determinado, en el Sitio Web se entrega esa informaci&oacute;n, m&aacute;s las bases y formularios de participaci&oacute;n.</dd>
+
+<dt>Documentos:</dt>
+
+<dd>
+<p>permiten incluir informaci&oacute;n en diferentes formatos sin restricciones de tama&ntilde;o, respecto de lo que podr&iacute;a hacerse a trav&eacute;s de otros medios, como los impresos y audiovisuales. Adicionalmente, generan la ventaja de que por no incurrir en gastos de impresi&oacute;n, su difusi&oacute;n a trav&eacute;s del Sitio Web genera importantes ahorros. Respecto de estos documentos, los formatos m&aacute;s usados y recomendados son los siguientes:</p>
+
+<dl>
+<dt>PDF (Portable Document Format):</dt>
+
+<dd>se trata de un tipo de documento electr&oacute;nico que se genera con el software Adobe Acrobat de la empresa Adobe, que permite crear documentos con un dise&ntilde;o que se imprime de la misma manera sin importar cu&aacute;l sea la impresora que se utilice. Este tipo de archivos permite realizar b&uacute;squedas en su contenido; bloquearlo para que no pueda ser modificado y colocar marcadores internos, para facilitar el acceso desde cualquier parte del documento. El usuario requiere tener un software lector de este tipo de documentos, que se obtiene gratis desde el Sitio Web de la empresa <strong>Adobe</strong>: (<a href="http://www.latinamerica.adobe.com/products/acrobat/adobepdf.html" title="Acrobat Reader en sitio de Adobe.">http://www.latinamerica.adobe.com/products/acrobat/adobepdf.html</a>).</dd>
+
+<dt>RTF (Rich Text Format):</dt>
+
+<dd>corresponde a un tipo de archivo que es reconocido por cualquier procesador de texto, por lo que su incorporaci&oacute;n en un Sitio Web permitir&aacute; que cualquier usuario que disponga de un software de escritorio no licenciado (incluyendo WordPad que viene con el sistema operativo Windows), podr&aacute; abrir y leer el documento. La importancia de &eacute;ste es que todo el formato que pueda tener un documento (negritas, cursivas, im&aacute;genes, columnas, etc.), es respetado y se despliega en el programa que lo abra, tal como fue generado. El contenido puede ser igualmente bloqueado para que no pueda ser alterado, aunque esta funcionalidad s&oacute;lo opera cuando se abre desde el mismo programa en el cual fue cerrado el acceso a modificar el archivo.</dd>
+</dl>
+</dd>
+</dl>
+
+<p>Al publicar la informaci&oacute;n en el Sitio Web de ambos tipos de documento, se debe se&ntilde;alar visiblemente su peso y el formato respectivo.</p>
+
+<h4><a name="t04multimedia" id="t04multimedia"></a>Contenidos Multimediales</h4>
+
+<p>Se refiere a la capacidad que tiene la plataforma web para incorporar contenidos audiovisuales, entre los cuales se incluyen servicios de streaming (que entregan el contenido a medida que el archivo es enviado desde el servidor al cliente) y aplicaciones basadas en la tecnolog&iacute;a <a href="http://www.macromedia.com/" title="Sitio web de Macromedia.">Flash de Macromedia</a>.</p>
+
+<p>Dentro de estos contenidos destacan por su diferencia en t&eacute;rminos de proceso, los siguientes:</p>
+
+<dl>
+<dt>Audio:</dt>
+
+<dd>corresponde a cualquier contenido audible que pueda ser incorporado al Sitio Web. Para ello debe ser digitalizado y luego preparado en formato de alta compresi&oacute;n, del tipo <a class="glossaryTerm" href="../../glosario.htm#Mp3001" title="Ver t&eacute;rmino en glosario.">MP3</a>, <a class="glossaryTerm" href="../../glosario.htm#Rea001" title="Ver t&eacute;rmino en glosario.">Real Audio</a> o Windows Media, gracias a los cuales es posible que se pueda reducir su peso y que los usuarios puedan descargarlos r&aacute;pidamente del Sitio Web. Es importante considerar que, cada vez que se incorpore un contenido de este tipo, se debe indicar claramente el peso, el formato y el software utilizado para verlo; si &eacute;ste es de libre disponibilidad, se debe publicar un enlace para que el usuario lo pueda bajar a su computador. Por lo mismo, evite poner archivos de audio de fondo y siempre permita que los usuarios decidan comenzar a escuchar el sonido que se ofrezca.</dd>
+
+<dt>Video:</dt>
+
+<dd>corresponde a cualquier contenido audiovisual que pueda ser incorporado al Sitio Web. Para ello debe ser digitalizado y luego preparado en formato de alta compresi&oacute;n, del tipo <a class="glossaryTerm" href="../../glosario.htm#Avi001" title="Ver t&eacute;rmino en glosario.">AVI</a>, <a class="glossaryTerm" href="../../glosario.htm#Mpe001" title="Ver t&eacute;rmino en glosario.">MPG</a>, Real Video o Windows Media. Es importante considerar que la generaci&oacute;n de video siempre implicar&aacute; la creaci&oacute;n de archivos de alto peso (medido en Kilobytes), y que &eacute;ste aumentar&aacute; mientras m&aacute;s grande sea el tama&ntilde;o de la imagen a mostrar. Es importante considerar que cada vez que se incorpore un contenido de este tipo, se debe indicar claramente el peso, el formato y el software utilizado para verlo; si &eacute;ste es de libre disponibilidad, se debe publicar un enlace para que el usuario lo pueda bajar a su computador. Recuerde que este tipo de contenidos s&oacute;lo debe usarse cuando sea necesario y que la calidad del mismo nunca satisfar&aacute; a las expectativas de los usuarios.</dd>
+
+<dt>Flash:</dt>
+
+<dd>corresponde a cualquier contenido desarrollado usando esta tecnolog&iacute;a de Macromedia (<a href="http://www.macromedia.com/es/software/flash/" title="Sitio web de Macromedia.">http://www.macromedia.com/es/software/flash/</a>) que se caracteriza por aumentar las capacidades de interacci&oacute;n con elementos gr&aacute;ficos y audiovisuales. Para utilizar esta tecnolog&iacute;a se utiliza el software Flash de Macromedia, el cual genera objetos con la extensi&oacute;n SWF. Tal como en el caso de los elementos anteriores, se debe cuidar el peso de los archivos creados con esta tecnolog&iacute;a y, cada vez que se incorpore un contenido de este tipo, se debe indicar claramente un enlace para que el usuario pueda bajar el software Flash Player usado para visualizar este tipo de contenidos. Cuando se use esta tecnolog&iacute;a, siempre se debe ofrecer una forma alternativa de acceder al mismo contenido.</dd>
+</dl>
+
+<h4><a name="t04graficos" id="t04graficos"></a>Contenidos Gr&aacute;ficos</h4>
+
+<p>Se refiere a todos los elementos visuales que se pueden incorporar a un Sitio Web, tales como dibujos e im&aacute;genes, que permiten complementar la informaci&oacute;n que se desea incluir en el Sitio Web.</p>
+
+<p>Dentro de estos contenidos se deben destacar tres caracter&iacute;sticas que los hacen especiales al momento de procesarlos y que son las siguientes:</p>
+
+<dl>
+<dt>Formato:</dt>
+
+<dd>se refiere al tipo de archivo que se generar&aacute; con la imagen en la que se est&eacute; trabajando. Normalmente se utiliza el formato <a class="glossaryTerm" href="../../glosario.htm#Gif001" title="Ver t&eacute;rmino en glosario.">GIF</a> (Graphic Interchange Format) para cualquier imagen peque&ntilde;a como un icono o una imagen que tenga colores planos; para fotograf&iacute;as e im&aacute;genes de mayor tama&ntilde;o y cantidad de colores, debe preferirse el formato <a class="glossaryTerm" href="../../glosario.htm#Jpe001" title="Ver t&eacute;rmino en glosario.">JPG o JPEG</a> (Joint Picture Expert Joint). Cualquier otro formato posible de utilizar deber&aacute; evitarse, ya que s&oacute;lo se puede ver en determinadas plataformas (por ejemplo, <a class="glossaryTerm" href="../../glosario.htm#Png001" title="Ver t&eacute;rmino en glosario.">PNG</a>).</dd>
+
+<dt>Peso:</dt>
+
+<dd>una de las precauciones centrales que se debe tener en cuenta al momento de generar im&aacute;genes para un Sitio Web, es que se debe mantener un l&iacute;mite en el peso de los archivos para no afectar el desempe&ntilde;o de las p&aacute;ginas. Mientras m&aacute;s pesadas sean &eacute;stas, m&aacute;s tiempo deber&aacute; esperar el usuario para que se muestre en su computador. Por ello, se debe buscar que las im&aacute;genes de fotos, por ejemplo, no excedan los 15 <abbr title="Kilobytes." lang="en">Kb</abbr> de peso y que una p&aacute;gina con todos sus elementos no pese m&aacute;s all&aacute; de 100 Kb. Es importante considerar que un usuario con un m&oacute;dem de 56 <abbr title="Kilobits por segundo.">Kbps</abbr> recibe, en condiciones ideales, 7 Kilobytes por segundo. Por ello, una p&aacute;gina que tenga ese l&iacute;mite de peso llegar&aacute; en alrededor de 15 segundos hasta el computador del usuario, lo cual es un tiempo muy largo si se compara con lo que normalmente est&aacute; dispuesto a esperar.</dd>
+
+<dt>Tama&ntilde;o:</dt>
+
+<dd>junto con el peso, el tama&ntilde;o es la segunda de las precauciones principales que se debe tener en cuenta para las im&aacute;genes de un Sitio Web. Lo normal es que una foto para web sea generada en 72 dpi (dots per inch o puntos por pulgada) y que sus dimensiones sean medidas en pixeles. Las m&aacute;s usadas ser&aacute;n inferiores a 250 pixeles en el ancho o alto, ya que de lo contrario se estar&aacute; llegando a im&aacute;genes de mucho peso. Si se desea poner una imagen de mayor tama&ntilde;o, se debe indicar su tama&ntilde;o y peso (idealmente en el texto alterno de la imagen) para que el usuario sepa que deber&aacute; esperar un tiempo a que la imagen baje a su computador, antes de acceder a ella.</dd>
+</dl>
+
+<h3><a name="t03funcion" id="t03funcion"></a>Mantenci&oacute;n de Funcionalidades</h3>
+
+<p>Junto con la mantenci&oacute;n de contenidos indicados en el punto anterior, es importante considerar que la plataforma sobre la que se estar&aacute; publicando la informaci&oacute;n, ser&aacute; una de car&aacute;cter tecnol&oacute;gico, por lo que ser&aacute; necesario que se preste atenci&oacute;n a la mantenci&oacute;n computacional de los servidores que permitir&aacute;n visualizar el sitio, y de los programas utilizados para ese efecto.</p>
+
+<p>En este sentido, podemos diferenciar dos tipos de mantenciones:</p>
+
+<h4><a name="t04preventiva" id="t04preventiva"></a>Mantenci&oacute;n Preventiva</h4>
+
+<p>Se refiere a todas las actividades que permitir&aacute;n que los computadores (servidores) y la red a trav&eacute;s de la cual se accede al Sitio Web, funcionen de manera adecuada. Para ello ser&aacute; importante tomar los resguardos de seguridad y de acceso que impidan el ingreso de extra&ntilde;os a la plataforma de trabajo. Esto tendr&aacute; mayor importancia en la medida de que se utilice alguna herramienta de administraci&oacute;n distribuida de contenidos.</p>
+
+<p>Otros resguardos que ser&aacute;n normalmente importantes de tomar, ser&aacute; el cuidado de los <strong>logs</strong> del servidor web, cuyo an&aacute;lisis mediante software especializado (ver parte final de este Cap&iacute;tulo 5 y el Cap&iacute;tulo 4), permitir&aacute; conocer de manera muy concreta cu&aacute;les son las &aacute;reas m&aacute;s visitadas por los usuarios del Sitio Web.</p>
+
+<p>Mientras m&aacute;s visitas reciba un Sitio Web, mayor tama&ntilde;o tendr&aacute;n los <strong>logs</strong>; de no ser respaldados y borrados de su espacio habitual en el servidor, estos archivos pueden terminar afectando el correcto desempe&ntilde;o del equipamiento usado para mostrar el Sitio Web.</p>
+
+<div class="stressed">
+<p>En resumen, la mantenci&oacute;n preventiva es un trabajo que radica en el Departamento de Inform&aacute;tica (o similar) y se refiere a que el computador que tenga el Sitio Web o el contratista que d&eacute; ese servicio (Hosting), lo haga de manera adecuada y eficiente en coordinaci&oacute;n con la contraparte t&eacute;cnica (&aacute;rea de Inform&aacute;tica de la instituci&oacute;n).</p>
+</div>
+
+<h4><a name="t04correctiva" id="t04correctiva"></a>Mantenci&oacute;n Correctiva</h4>
+
+<p>Se refiere a todas las actividades tendientes a mejorar un Sitio Web, a partir de la correcci&oacute;n de errores o de la decisi&oacute;n de incorporar nuevas funcionalidades, independiente de si se cuenta o no con externalizaci&oacute;n de servicios.</p>
+
+<p>En este aspecto pueden darse dos &aacute;reas de acci&oacute;n que son las siguientes:</p>
+
+<div class="stressed">
+<dl>
+<dt>Correcciones en Garant&iacute;a:</dt>
+
+<dd>se refiere a todos los cambios que se pueden hacer en la programaci&oacute;n del software de una aplicaci&oacute;n o Sitio Web, en el per&iacute;odo inmediatamente posterior a su desarrollo, instalaci&oacute;n y entrega final. Normalmente estas adiciones son sin costo para la instituci&oacute;n y las realiza el desarrollador, siempre y cuando hayan sido incluidas en los T&eacute;rminos de Referencia y en el Contrato correspondiente.</dd>
+
+<dt>Nuevos Desarrollos:</dt>
+
+<dd>se refiere a las nuevas funcionalidades que se le pueden agregar a un software o Sitio Web, basado en la mejora de sus caracter&iacute;sticas actuales. Normalmente estas adiciones significan un costo para la instituci&oacute;n que se debe dimensionar en horas de desarrollo.</dd>
+</dl>
+</div>
+
+<h4><a name="t04usuarios" id="t04usuarios"></a>Los Usuarios Durante la Mantenci&oacute;n</h4>
+
+<p>Cuando se est&eacute; realizando la mantenci&oacute;n del Sitio Web y sea necesario <strong>bajar</strong> el sitio por alg&uacute;n tiempo, es preferible cambiar la p&aacute;gina inicial del sitio, con un mensaje del estilo <q>Estimado Ciudadano: Estamos mejorando nuestro servicio para usted</q> de tal manera de evitar mensajes del estilo <q cite="">The current page is not available</q> o bien <q cite="">Server not found</q>, que generan un impacto negativo sobre los usuarios.</p>
+
+<p>Siempre se debe cuidar la imagen de la instituci&oacute;n, ya que para muchos usuarios la pantalla del Sitio Web constituir&aacute; la forma de relacionarse con &eacute;sta.</p>
+
+<h3><a name="t03monitor" id="t03monitor"></a>Monitoreo de Actividades</h3>
+
+<p>Como parte del plan de mantenci&oacute;n de todo sitio, un lugar muy importante lo ocupan las actividades relacionadas con el monitoreo de actividad del sitio, por cuanto a trav&eacute;s de ellas es posible saber lo que est&aacute; ocurriendo con la audiencia que concurre a visitar el sitio y utilizar sus funcionalidades.</p>
+
+<p>Para entender mejor las capacidades existentes y la forma de operar con ellas, hemos dividido esta parte en tres &aacute;reas bien delimitadas, que son las que se explican a continuaci&oacute;n:</p>
+
+<h4><a name="t04trafico" id="t04trafico"></a>Estad&iacute;sticas de Tr&aacute;fico</h4>
+
+<p>Se refiere a la capacidad que tiene todo sitio de Internet para almacenar informaci&oacute;n detallada de todo lo que hace un usuario que ingresa a sus p&aacute;ginas.</p>
+
+<p>Gracias a esta estad&iacute;stica, podemos acceder a la siguiente informaci&oacute;n:</p>
+
+<dl>
+<dt>Quien:</dt>
+
+<dd>Accesos separados por dominios/pa&iacute;ses, accesos separados por servidores, informaci&oacute;n sobre las &uacute;ltimas visitas recibidas, informaci&oacute;n sobre visitas de robots/spiders, informaci&oacute;n de <a class="glossaryTerm" href="../../glosario.htm#Num001" title="Ver t&eacute;rmino en glosario.">n&uacute;meros IP</a> que visitan m&aacute;s frecuentemente.</dd>
+
+<dt>Cu&aacute;ndo:</dt>
+
+<dd>informaci&oacute;n sobre accesos por mes/d&iacute;a, accesos por d&iacute;as de la semana y visitas separadas por horas.</dd>
+
+<dt>Enlaces:</dt>
+
+<dd>Informaci&oacute;n sobre el origen del enlace que trajo a un usuario a nuestro sitio; informaci&oacute;n sobre los enlaces que trajeron a usuarios desde los buscadores, enlaces desde otros sitios que produjeron visitas en el nuestro, frases y palabras clave utilizadas por los usuarios en los buscadores para acceder a nuestro sitio.</dd>
+
+<dt>Navegaci&oacute;n:</dt>
+
+<dd>Informaci&oacute;n sobre la duraci&oacute;n de las visitas y a qu&eacute; p&aacute;ginas tuvieron acceso, informaci&oacute;n sobre cu&aacute;l es la p&aacute;gina de entrada y de salida al sitio, informaci&oacute;n sobre tipos de archivos m&aacute;s usados; informaci&oacute;n sobre sistemas operativos de quienes visitan el sitio, informaci&oacute;n sobre los programas navegadores utilizados y sus versiones.</dd>
+
+<dt>Otros:</dt>
+
+<dd>Descripci&oacute;n de los errores m&aacute;s frecuentes y de las p&aacute;ginas no encontradas en el sitio.</dd>
+</dl>
+
+<p>Como se puede apreciar es posible obtener informaci&oacute;n de un sitio, aunque para ello hay que tomar cuatro acciones muy concretas y permanentes:</p>
+
+<ul>
+<li>Almacenar los archivos de log del servidor para que puedan ser procesados.</li>
+
+<li>Procesar peri&oacute;dicamente los archivos de logs para tener informaci&oacute;n sobre &aacute;reas del sitio m&aacute;s y menos visitadas; contenidos m&aacute;s solicitados, etc.</li>
+
+<li>Realizar actividades de gesti&oacute;n del contenido, basado en lo que se indique como importante en el an&aacute;lisis previo.</li>
+
+<li>Tomar decisiones fundadas usando la informaci&oacute;n que se obtiene a trav&eacute;s del sitio y a partir de la que env&iacute;an sus usuarios mediante los mecanismos de contacto del Sitio Web.</li>
+</ul>
+
+<h4><a name="t04habitos" id="t04habitos"></a>H&aacute;bitos de Uso</h4>
+
+<p>Basado en lo anterior, una de las tareas que debe realizar todo encargado de Sitio Web es intentar entender a sus usuarios, con el fin de entregarle lo que andan buscando de manera m&aacute;s simple.</p>
+
+<p>Basado en dicha informaci&oacute;n, el encargado del sitio podr&aacute;:</p>
+
+<ul>
+<li>Llevar a la portada los contenidos m&aacute;s solicitados</li>
+
+<li>Mejorar los contenidos solicitados pero que el sitio no ofrece</li>
+
+<li>Generar contenidos en las &aacute;reas que se encuentren d&eacute;biles</li>
+</ul>
+
+<p>Especial importancia la da el hecho de que el archivo log almacena la informaci&oacute;n de aquello que los usuarios escriben en un buscador para acceder a nuestro sitio, puesto que ello ofrece pistas muy concretas de sus h&aacute;bitos de uso e intereses.</p>
+
+<div class="stressed">
+<p>Adicionalmente, se puede contratar la programaci&oacute;n de algunos sistemas que permiten hacer un seguimiento de los usuarios desde que ingresan al sitio, hasta que terminan su navegaci&oacute;n. De esa manera se podr&aacute; entender a qu&eacute; vienen al sitio, lo que buscan y se podr&aacute; establecer el grado de satisfacci&oacute;n que les proporcionan dichas visitas.</p>
+</div>
+
+<h4><a name="t04mining" id="t04mining"></a>Webmining</h4>
+
+<p>Finalmente, un paso m&aacute;s all&aacute; de este tema consiste en utilizar tecnolog&iacute;as de programaci&oacute;n m&aacute;s sofisticadas para entender qu&eacute; hacen los usuarios en un sitio y de qu&eacute; manera se puede actuar sobre ellos para satisfacer de manera m&aacute;s concreta sus necesidades.</p>
+
+<p>En Internet se ofrece abundante informaci&oacute;n sobre el tema, que puede ser utilizada para iniciar una investigaci&oacute;n que, m&aacute;s tarde, pueda ser aplicada sobre los datos obtenidos del Sitio Web de la instituci&oacute;n.</p>
+
+<div class="chapterNav">
+<ul>
+<li class="back"><a href="mantencion.htm" title="Ver p&aacute;gina anterior."><img src="../../../images/icn_chapnavprev.gif" alt="P&aacute;gina anterior." />anterior</a></li>
+
+<li class="index"><a href="index.htm" title="Ver portada de este cap&iacute;tulo."><img src="../../../images/icn_chapnavindex.gif" alt="Portada de cap&iacute;tulo." />portada cap&iacute;tulo</a></li>
+
+<li class="next">siguiente<img src="../../../images/icn_chapnavnext_off.gif" alt="P&aacute;gina siguiente." /></li>
+</ul>
+</div>
+
+<div class="chapterEnd">
+<p>Final del Cap&iacute;tulo V</p>
+</div>
+
+ 
+</div>
+</div>
+
+<div id="footer">
+<div id="logos"><p><a title="Gobierno de Chile, Ministerio Secretar&iacute;a General de la Presidencia" href="http://www.minsegpres.gob.cl/"><img src="../../../images/pic.foot.logogob.gif" alt="Logo Gobierno de Chile, Ministerio Secretar&iacute;a General de la Presidencia" /></a><a title="Creative Commons: algunos derechos reservados" href="http://creativecommons.org/licenses/by-nc-sa/2.0/cl/"><img src="../../../guia-v2/images/88x31.png" alt="Imagen descriptiva de la Licencia Creative Commons" /></a></p></div>
+
+<ul id="footerMenu">
+<li><a href="../../../uso.htm" title="Condiciones de Uso de este sitio y de la Gu&iacute;a Web.">Condiciones de Uso</a></li>
+
+<li><a href="../../../equipo.htm" title="Colaboradores de este sitio y de la Gu&iacute;a Web.">Colaboradores</a></li>
+
+<li><a href="../../../estandares.htm" title="Est&aacute;ndares Web utilizados en este sitio.">Est&aacute;ndares</a></li>
+</ul>
+
+<div id="copyrights">
+<p>El texto y el material de este Sitio Web tienen algunos derechos reservados, de acuerdo a la <a title="Creative Commons: algunos derechos reservados" href="http://creativecommons.org/licenses/by-nc-sa/2.0/cl/">Licencia Creative Commons</a>.</p>
+
+<p>Gobierno de Chile</p>
+<p>Modernizaci&oacute;n y Gobierno Electr&oacute;nico, Ministerio Secretar&iacute;a General de la Presidencia</p>
+<p>Teatinos 333, piso 4 - Santiago de Chile. Tel&eacute;fono (+56 2) 688 77 01</p>
+</div>
+</div>
+<!---Este sitio usa estad&iacute;sticas de Google Analytics-->
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-3208644-1";
+urchinTracker();
+</script>
+<!---Fin Google Analytics-->
+</body>
+
+<!-- Mirrored from www.guiaweb.gob.cl/guia/capitulos/cinco/implantacion.htm by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 29 Nov 2011 22:11:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>
+<script type='text/javascript' src="/guiaweb_old/mensaje_caducidad.js"></script>

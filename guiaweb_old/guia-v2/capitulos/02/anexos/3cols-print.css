@@ -1,0 +1,85 @@
+html {
+   margin:0;
+   padding:0;
+   }
+body {
+	font-family: "Trebuchet MS", Verdana, Lucida, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	background-color: #E1DFC8;
+	}
+
+/* Marcas para enlaces */	
+
+a {
+	color:  #228B22;
+	}
+a:visited {
+	color:  #808000;
+	}
+a:active {
+	color:  #FF0000;
+	}
+a:hover {
+	text-decoration: none;
+	background-color: #FCE08D;
+	}
+
+/* Marcas de p&aacute;rrafos de texto */	
+
+p {
+	text-align: justify;
+	text-indent: 8px;
+	}
+strong {
+	font-weight: bold;
+	}
+
+/* T&iacute;tulos */	
+
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	}
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	}
+h3 {
+	font-size: 1em;
+	font-weight: bold;
+	}
+
+/* Columna de la izquierda */	
+#izq {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 20px;
+	}
+html>body #izq {
+	width: 150px; /* ie5win fudge ends */
+	}
+#izq img {
+	border: 0;
+	vertical-align: middle;
+	text-align: center;
+	display: block;
+	}
+#izq p {
+	text-indent: 0px;
+	text-align: center;
+}
+
+/* Columna del centro */	
+#cen {
+	position: relative;
+	margin: 10px 10px 10px 10px;
+	padding: 10px;
+	border: 0px;
+	}
+
+/* Columnas que no se despliegan */	
+
+#pie {display:none;}
+#der{display:none;} 
+	

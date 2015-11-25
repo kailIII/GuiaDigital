@@ -1,0 +1,107 @@
+/*
+ * $Id: print.css,v 1.2 2004/03/05 18:49:40 nelson Exp $
+ * 
+ * Definici&oacute;n de presentaci&oacute;n impresa de las caracter&iacute;sticas generales 
+ * de los documentos.
+ * 
+ * @media		print
+ * @ua			IE5+, Mozilla 1.3+, Konqueror X, Opera X
+ * @level		2
+ * @name		print_v2.css
+ * @version		$Revision: 1.3 $
+ * @since		$Date: 2007/12/06 $
+ * @author		Nelson Rodr&iacute;guez-Pe&ntilde;a <nelson@webstudio.cl> + Juan C. Camus <jccamus-at-usando.info>
+ *
+ */
+
+
+body {
+	margin: 0pt 0pt 5pt 2pt;
+	font-family: "Times New Roman", Georgia, serif, Times;
+	font-size: 1em;
+	color: #333333;
+	background-color: #FFFFFF;
+}
+
+#pageHeader {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/*
+ * Los siguientes selectores determinan el logo apropiado seg&uacute;n el contexto:
+ */
+#pageHeader #corpLogo {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	width: auto;
+	height: auto;
+	border: none;
+	border-bottom: 2pt solid #333333;
+}
+#pageHeader #corpLogo #printLogo {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	height: 70px;
+}
+
+html body #pageHeader #corpLogo #screenLogo,
+html body #pageHeader #uiMainMenu,
+html body #pageHeader #gwConcept,
+html body #pageHeader #uiToolsMenu,
+html body #container.intStandard #uiSectionMenu {
+	display: none;
+	float: none;
+	clear: both;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+
+html body #container {
+	width: 95%;
+	border: none;
+	padding-top: 15px;
+	margin: 0px;
+}
+
+html body #container #content {
+	width: 95%;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+p {
+	margin: 0.6em 0px;
+	line-height: 1.5em;
+}
+
+#container ul.breadCrumbs {
+	border-left: none;
+}
+
+body table {
+	width: 90%;
+	page-break-before: avoid;
+	page-break-after: avoid;
+	page-break-inside: auto;
+}
+
+#container #content div.chapterEnd,
+#container #content div.chapterNav {
+	display: none;
+}
+
+#container #introduction img.sectionPictPort {
+	display: block;
+	margin: 20px 10px 0 0;
+}
+#container #introduction #introContentPort {
+	position: relative;
+	margin-right: 10px;
+	margin-left: 300px;
+}

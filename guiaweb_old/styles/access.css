@@ -1,0 +1,49 @@
+/*
+ * $Id: access.css,v 1.1 2004/03/04 00:18:47 nelson Exp $
+ * 
+ * Hoja de estilos especial para temas de accesibilidad. Uso principalmente.
+ * en archivos de descripci&oacute;n de im&aacute;genes y medios v&iacute;a LONDESC.
+ *
+ * @media		screen
+ * @ua			IE5+, Mozilla 1.3+, Konqueror X, Opera X
+ * @level		1
+ * @name			access.css
+ * @version		$Revision: 1.1 $
+ * @since		$Date: 2004/03/04 00:18:47 $
+ * @author		Nelson Rodr&iacute;guez-Pe&ntilde;a <nelson@webstudio.cl>
+ *
+ */
+
+
+
+body {
+	font-family: "Trebuchet MS", Verdana, Lucida, Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+a {
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Trebuchet MS", Verdana, Lucida, Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: transparent;
+}
+h1 {
+	font-size: 1.6em;
+}
+h2 {
+	font-size: 1.4em;
+}
+h3 {
+	font-size: 1.2em;
+}
+h4 {
+	font-size: 1em;
+}
+
